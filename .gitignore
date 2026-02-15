@@ -1,0 +1,8 @@
+# OpenClaw Workspace GitIgnore
+.openclaw/
+node_modules/
+*.log
+downloads/
+temp/
+# Do not ignore secrets if you want a full recovery, 
+# but ONLY if the repository is PRIVATE.
