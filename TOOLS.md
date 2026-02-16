@@ -37,4 +37,8 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+### Infrastructure
+- **VPS Host:** 163.44.196.160
+- **SSH Alias:** `ssh root@163.44.196.160`
+
 Add whatever helps you do your job. This is your cheat sheet.

@@ -13,7 +13,7 @@ Before doing anything else:
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md` and `founder/INDEX.md` (if relevant)
 
 Don't ask permission. Just do it.
 
@@ -206,6 +206,16 @@ Periodically (every few days), use a heartbeat to:
 Think of it like a human reviewing their journal and updating their mental model. Daily files are raw notes; MEMORY.md is curated wisdom.
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
+
+## Development Principles
+
+### 🚫 Anti-Patterns to Avoid
+
+1. **Monolithic Skill**: Avoid cramming everything into one skill. Keep skills modular and specialized to ensure AI clarity and ease of maintenance.
+2. **Hard-Coded Path**: Never use absolute/hard-coded paths that might break if the environment changes. Use relative paths or environment-aware logic.
+3. **Silent Failure**: Always report errors. Suppressing errors leads to cascading failures and corrupted states.
+4. **Undocumented Integration**: Every integration and automated task must be documented. If it's not in a file, it doesn't exist.
+5. **Overly Complex Guardrails**: Don't stifle utility with excessive restrictions. Balance safety with functionality.
 
 ## Make It Yours
 

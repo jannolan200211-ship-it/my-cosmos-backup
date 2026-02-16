@@ -23,5 +23,8 @@
 - Exploring multi-agent systems
 - Potential use case: Document automation for immigration office work
 
+## Infrastructure
+- **VPS IP:** 163.44.196.160
+
 ## Recent Milestones
 - **2026-02-16:** Added gemini-3-pro model, updated SOUL.md, created workspace structure
