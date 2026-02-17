@@ -1,5 +1,5 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - ပုံမှန် စစ်ဆေးမှုများ
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+# Heartbeat API ကို ကျော်ချင်ရင် ဒီဖိုင်ကို ဗလာအတိုင်း (သို့) မှတ်ချက် (Comment) တွေနဲ့ပဲ ထားပါ။
 
-# Add tasks below when you want the agent to check something periodically.
+# အချိန်အပိုင်းအခြားအလိုက် တစ်ခုခု စစ်ဆေးစေချင်ရင် အောက်မှာ ရေးထည့်ပါ။

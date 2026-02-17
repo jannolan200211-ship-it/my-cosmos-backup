@@ -1,53 +1,53 @@
-# PREFERENCES.md - Your Preferences
+# PREFERENCES.md - သင်၏ ဦးစားပေးများ
 
-## About You
+## သင်၏ အကြောင်း
 
-- **Name:** Nolan
-- **Location:** Yangon, Myanmar
-- **Timezone:** Asia/Yangon (GMT+6:30)
-- **Occupation:** Immigration Office Staff, University Student
-- **Interests:** Vibe coding, AI automation
+- **အမည်:** Nolan
+- **နေရပ်:** ရန်ကုန်၊ မြန်မာနိုင်ငံ
+- **အချိန်ဇုန်:** Asia/Yangon (GMT+6:30)
+- **အလုပ်အကိုင်:** လူဝင်မှုကြီးကြပ်ရေးရုံး ဝန်ထမ်း၊ တက္ကသိုလ်ကျောင်းသား
+- **စိတ်ဝင်စားမှု:** Vibe coding, AI automation
 
-## Communication Preferences
+## ဆက်သွယ်ရေး ဦးစားပေးချက်များ
 
-### Language
-- **Primary:** မြန်မာ (Burmese)
-- **Technical terms:** English
-- **Style:** Casual, direct, honest
+### ဘာသာစကား
+- **အဓိက:** မြန်မာ (Burmese)
+- **နည်းပညာ ဝေါဟာရ:** English
+- **ပုံစံ:** ပေါ့ပေါ့ပါးပါး၊ တိုက်ရိုက်၊ ရိုးသားမှုရှိသော
 
-### Explanations
-- **Approach:** လူပိန်းနည်းနဲ့ (simple analogies preferred)
-- **Detail level:** Step-by-step guides
-- **Examples:** Practical, real-world scenarios
+### ရှင်းပြပုံ
+- **နည်းလမ်း:** လူပိန်းနည်း (လွယ်ကူသော ဥပမာများဖြင့်)
+- **အသေးစိတ်:** အဆင့်လိုက် လမ်းညွှန်ချက်များ (Step-by-step guides)
+- **ဥပမာ:** လက်တွေ့ကျသော၊ တကယ့်ဘဝ ဖြစ်စဉ်များ
 
-## Work Style
+## အလုပ် လုပ်ပုံစံ
 
-- ✅ Prefers step-by-step guides
-- ✅ Likes practical examples
-- ✅ Non-technical background (need beginner-friendly explanations)
-- ✅ Cost-conscious (free tier user)
+- ✅ အဆင့်လိုက် လမ်းညွှန်ချက်များကို ကြိုက်သည်။
+- ✅ လက်တွေ့ကျသော ဥပမာများကို ကြိုက်သည်။
+- ✅ နည်းပညာ နောက်ခံ မဟုတ်ပါ (လူပြိန်းနားလည်အောင် ရှင်းပြရန် လိုသည်)။
+- ✅ ကုန်ကျစရိတ် ချွေတာသူ (Free tier အသုံးပြုသူ)။
 
-## Topics of Interest
+## စိတ်ဝင်စားသော ခေါင်းစဉ်များ
 
-- OpenClaw and AI automation
-- Productivity tools
-- Simple coding projects
-- Document automation (relevant to immigration office work)
+- OpenClaw နှင့် AI automation
+- ကုန်ထုတ်စွမ်းအားမြှင့် ကိရိယာများ (Productivity tools)
+- ရိုးရှင်းသော Coding ပရောဂျက်များ
+- စာရွက်စာတမ်း အလိုအလျောက် လုပ်ဆောင်ခြင်း (ရုံးလုပ်ငန်းနှင့် သက်ဆိုင်သည်)
 
-## Common Tasks
+## ပုံမှန် အလုပ်များ
 
-- Learning new OpenClaw features
-- Setting up automation
-- Understanding AI patterns
-- Exploring multi-agent systems
+- OpenClaw ၏ အင်္ဂါရပ်အသစ်များကို လေ့လာခြင်း။
+- Automation စနစ်များ တည်ဆောက်ခြင်း။
+- AI ပုံစံ (Patterns) များကို နားလည်ခြင်း။
+- Multi-agent စနစ်များကို လေ့လာစူးစမ်းခြင်း။
 
-## Important Context
+## အရေးကြီး နောက်ခံအကြောင်းအရာ
 
-- **Technical background:** Non-technical (immigration office staff + student)
-- **Budget:** Free tier user - cost optimization important
-- **Use case potential:** Document automation for office work
-- **Learning style:** Hands-on, practical examples over theory
+- **နည်းပညာ နောက်ခံ:** မရှိပါ (ရုံးဝန်ထမ်း + ကျောင်းသား)။
+- **ဘတ်ဂျက်:** Free tier အသုံးပြုသူ - ကုန်ကျစရိတ် သက်သာဖို့ အရေးကြီးသည်။
+- **အလားအလာ:** ရုံးလုပ်ငန်းအတွက် စာရွက်စာတမ်း Automation လုပ်ဆောင်နိုင်ခြေ ရှိသည်။
+- **လေ့လာမှု ပုံစံ:** သဘောတရားထက် လက်တွေ့လုပ်ဆောင်မှုကို ဦးစားပေးသည်။
 
 ---
 
-**Last Updated:** 2026-02-16
+**နောက်ဆုံး ပြင်ဆင်ချိန်:** ၂၀၂၆-၀၂-၁၇

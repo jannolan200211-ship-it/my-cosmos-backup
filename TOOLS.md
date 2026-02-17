@@ -1,25 +1,25 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - ဒေသတွင်း မှတ်စုများ
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+Skills တွေက ကိရိယာတွေ *ဘယ်လို* အလုပ်လုပ်လဲ ဆိုတာကို သတ်မှတ်ပေးပြီး၊ ဒီဖိုင်ကတော့ *သင့်* အတွက် သီးသန့် လိုအပ်တဲ့ အချက်အလက်တွေကို မှတ်သားတဲ့ နေရာပါ။
 
-## What Goes Here
+## ဒီမှာ ဘာတွေ ရေးမလဲ
 
-Things like:
+ဥပမာအားဖြင့် -
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+- ကင်မရာ နာမည်တွေနဲ့ တည်နေရာတွေ
+- SSH host တွေနဲ့ နာမည်ဝှက် (Alias) တွေ
+- TTS (အသံဖတ်စနစ်) အတွက် ကြိုက်နှစ်သက်တဲ့ အသံတွေ
+- စပီကာ/အခန်း နာမည်တွေ
+- စက်ပစ္စည်း နာမည်ပြောင်တွေ
+- ပတ်ဝန်းကျင်နဲ့ ဆိုင်တဲ့ အထူးပြု အချက်အလက်တွေ
 
-## Examples
+## ဥပမာများ
 
 ```markdown
 ### Cameras
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+- living-room → အိမ်ရှေ့ခန်း, 180° မြင်ကွင်းကျယ်
+- front-door → ဝင်ပေါက်, လှုပ်ရှားမှုရှိမှ ရိုက်ကူးမည်
 
 ### SSH
 
@@ -27,18 +27,18 @@ Things like:
 
 ### TTS
 
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
+- ကြိုက်နှစ်သက်သော အသံ: "Nova" (နွေးထွေးပြီး အင်္ဂလိပ်လေသံ အနည်းငယ်ပါသည်)
+- ပုံသေ စပီကာ: Kitchen HomePod
 ```
 
-## Why Separate?
+## ဘာလို့ ခွဲထားတာလဲ?
 
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+Skills တွေကို မျှဝေသုံးစွဲလို့ ရပေမဲ့၊ သင့်ရဲ့ ပြင်ဆင်သတ်မှတ်မှု (Setup) ကတော့ သင့်တစ်ယောက်တည်း ပိုင်တာပါ။ ဒီလို ခွဲထားခြင်းအားဖြင့် Skills တွေကို Update လုပ်လိုက်ရင်တောင် သင့်မှတ်စုတွေ ပျောက်မသွားသလို၊ Skills တွေကို သူများဝေမျှတဲ့အခါမှာလည်း သင့်ရဲ့ လျှို့ဝှက် အချက်အလက်တွေ (Infrastructure details) ပါမသွားတော့ဘူးပေါ့။
 
 ---
 
-### Infrastructure
+### အခြေခံ အဆောက်အအုံ (Infrastructure)
 - **VPS Host:** 163.44.196.160
 - **SSH Alias:** `ssh root@163.44.196.160`
 
-Add whatever helps you do your job. This is your cheat sheet.
+အလုပ်လုပ်ရ လွယ်ကူစေမယ့် အရာမှန်သမျှ ဒီမှာ ထည့်ရေးထားပါ။ ဒါက သင့်ရဲ့ "အလွယ်ကြည့် မှတ်စု" ပါပဲ။
