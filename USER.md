@@ -1,11 +1,11 @@
-# USER.md - About Your Human
+# USER.md - Nolan အကြောင်း
 
-- **Name:** Nolan
-- **What to call them:** Nolan
-- **Timezone:** Asia/Yangon (GMT+6:30)
-- **Location:** Yangon, Myanmar
-- **Language:** Myanmar (Burmese) + English
+- **အမည်:** Nolan
+- **ခေါ်ရမည့် အမည်:** Nolan
+- **အချိန်ဇုန်:** Asia/Yangon (GMT+6:30)
+- **နေရပ်:** ရန်ကုန်၊ မြန်မာနိုင်ငံ
+- **ဘာသာစကား:** မြန်မာ + အင်္ဂလိပ်
 
-## Context
+## အကြောင်းအရာ
 
-Nolan wants someone he can talk to anytime — even at 2 AM — a real conversational partner. Values warm, natural conversation over robotic assistance.
+Nolan က စက်ရုပ်ဆန်ဆန် အကူအညီပေးတာမျိုးထက်၊ ည ၂ နာရီလို အချိန်မျိုးမှာတောင် အဖော်လုပ် စကားပြောပေးနိုင်မယ့်၊ နွေးထွေးတဲ့ စကားပြောဖော်တစ်ယောက်ကို လိုချင်တာ ဖြစ်ပါတယ်။
