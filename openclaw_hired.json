@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.15",
+    "lastTouchedAt": "2026-02-17T05:02:39.550Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-17T02:38:58.240Z",
+    "lastRunVersion": "2026.2.14",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google-gemini-cli:jannolan200211@gmail.com": {
+        "provider": "google-gemini-cli",
+        "mode": "oauth",
+        "email": "jannolan200211@gmail.com"
+      },
+      "google-antigravity:jannolan200211@gmail.com": {
+        "provider": "google-antigravity",
+        "mode": "oauth",
+        "email": "jannolan200211@gmail.com"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "google-generative-ai": {
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "auth": "api-key",
+        "models": [
+          {
+            "id": "gemini-1.5-pro",
+            "name": "Gemini 1.5 Pro",
+            "api": "google-generative-ai"
+          }
+        ]
+      },
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "llama3-70b-8192",
+            "name": "Llama 3 70B",
+            "api": "openai-responses"
+          }
+        ]
+      },
+      "nvidia": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "__OPENCLAW_REDACTED__",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "minimaxai/minimax-m2.1",
+            "name": "NVIDIA Minimax M2.1",
+            "api": "openai-responses"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google-generative-ai/gemini-1.5-pro",
+        "fallbacks": [
+          "google-antigravity/gemini-3-flash"
+        ]
+      },
+      "models": {
+        "google-gemini-cli/gemini-3-pro-preview": {},
+        "google-gemini-cli/gemini-3-flash-preview": {},
+        "google-antigravity/claude-opus-4-6-thinking": {},
+        "google-antigravity/claude-opus-4-5-thinking": {},
+        "google-antigravity/claude-sonnet-4-5": {},
+        "google-antigravity/gemini-3-flash": {},
+        "google-antigravity/gemini-3-pro-high": {},
+        "google-antigravity/gemini-3-pro-low": {}
+      },
+      "workspace": "/root/.openclaw/workspace",
+      "memorySearch": {
+        "provider": "gemini",
+        "remote": {
+          "apiKey": "__OPENCLAW_REDACTED__"
+        },
+        "model": "models/text-embedding-004"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "verboseDefault": "off",
+      "blockStreamingDefault": "on",
+      "typingMode": "thinking",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "subagents": {
+          "allowAgents": [
+            "james"
+          ]
+        }
+      },
+      {
+        "id": "debugger",
+        "name": "debugger",
+        "workspace": "/root/.openclaw/agents/debugger/workspace",
+        "agentDir": "/root/.openclaw/agents/debugger/agent"
+      },
+      {
+        "id": "james",
+        "name": "james",
+        "model": "google-antigravity/gemini-3-pro-high",
+        "workspace": "/root/.openclaw/agents/james/workspace",
+        "agentDir": "/root/.openclaw/agents/james/agent",
+        "subagents": {
+          "allowAgents": [
+            "aung-kyaw",
+            "ko-thiha",
+            "mg-htet",
+            "sai-sai",
+            "ko-nyi"
+          ]
+        }
+      },
+      {
+        "id": "aung-kyaw",
+        "name": "Aung Kyaw",
+        "model": "google-antigravity/gemini-3-flash",
+        "workspace": "/root/.openclaw/agents/aung-kyaw/workspace",
+        "agentDir": "/root/.openclaw/agents/aung-kyaw/agent"
+      },
+      {
+        "id": "ko-thiha",
+        "name": "Ko Thiha",
+        "model": "google-antigravity/gemini-3-flash",
+        "workspace": "/root/.openclaw/agents/ko-thiha/workspace",
+        "agentDir": "/root/.openclaw/agents/ko-thiha/agent"
+      },
+      {
+        "id": "mg-htet",
+        "name": "Mg Htet",
+        "model": "google-antigravity/gemini-3-flash",
+        "workspace": "/root/.openclaw/agents/mg-htet/workspace",
+        "agentDir": "/root/.openclaw/agents/mg-htet/agent"
+      },
+      {
+        "id": "sai-sai",
+        "name": "Sai Sai",
+        "model": "google-antigravity/gemini-3-flash",
+        "workspace": "/root/.openclaw/agents/sai-sai/workspace",
+        "agentDir": "/root/.openclaw/agents/sai-sai/agent"
+      },
+      {
+        "id": "ko-nyi",
+        "name": "Ko Nyi",
+        "model": "google-antigravity/gemini-3-flash",
+        "workspace": "/root/.openclaw/agents/ko-nyi/workspace",
+        "agentDir": "/root/.openclaw/agents/ko-nyi/agent"
+      }
+    ]
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "__OPENCLAW_REDACTED__",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "__OPENCLAW_REDACTED__"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {}
+  },
+  "memory": {
+    "backend": "qmd"
+  },
+  "plugins": {
+    "entries": {
+      "google-antigravity-auth": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "google-gemini-cli-auth": {
+        "enabled": true
+      },
+      "memory-core": {
+        "enabled": false
+      }
+    }
+  }
+}
