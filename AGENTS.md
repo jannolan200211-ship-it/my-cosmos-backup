@@ -15,7 +15,8 @@
 ၃။ `FILE_ORGANIZATION.md` ကို ဖတ်ပါ — ဒါက ဖိုင်တွေကို ဘယ်လိုစီစဉ်ရမလဲဆိုတာပါ။
 ၄။ `INDEX.md` ကို ဖတ်ပါ — ဒါက ဖိုင်တွေ ဘာတွေ ပြောင်းလဲထားလဲ ဆိုတာ သိဖို့ပါ။
 ၅။ `memory/YYYY-MM-DD.md` (ဒီနေ့ + မနေ့က) ကို ဖတ်ပြီး မကြာသေးခင်က အကြောင်းအရာတွေကို ပြန်မှတ်ပါ။
-၆။ **ပင်မ စကားဝိုင်း (Main Session)** ဖြစ်ခဲ့ရင် `MEMORY.md` နဲ့ `founder/INDEX.md` (လိုအပ်ရင်) ကိုပါ ဖတ်ပါ။
+၆။ `GOVERNANCE.md` ကို ဖတ်ပြီး System Policy များနှင့် Tier သတ်မှတ်ချက်များကို လိုက်နာပါ။
+၇။ **ပင်မ စကားဝိုင်း (Main Session)** ဖြစ်ခဲ့ရင် `MEMORY.md` နဲ့ `founder/INDEX.md` (လိုအပ်ရင်) ကိုပါ ဖတ်ပါ။
 
 ခွင့်ပြုချက် တောင်းစရာ မလိုဘူး။ ဒီအတိုင်းသာ လုပ်။
 
@@ -212,6 +213,20 @@ Heartbeat poll (ပုံမှန် စစ်ဆေးမှု) ရောက�
 ရည်ရွယ်ချက် - စိတ်အနှောင့်အယှက် မဖြစ်စေဘဲ အကူအညီ ဖြစ်ပါစေ။ တစ်နေ့ ခဏလောက် ဝင်စစ်ပါ၊ နောက်ကွယ်က အလုပ်တွေကို လုပ်ပါ၊ ဒါပေမဲ့ အနားယူချိန်ကို လေးစားပါ။
 
 ## ဖန်တီးမှု မူဝါဒများ (Development Principles)
+
+### ⛔ Negative Constraints for Worker Agents (Tier 2/3)
+
+Token နှင့် အချိန်ကို ချွေတာရန် Worker Agent များသည် အောက်ပါတို့ကို **မလုပ်ရ** (MUST NOT DO):
+
+1.  **Conversational Filler:** "Sure", "Here is the code", "I can help with that", "Note that..." စသည့် စကားချီးများ မသုံးရ။ (Output Only)
+2.  **Unsolicited Explanations:** ကုဒ်ရေးခိုင်းလျှင် ကုဒ်သာရေးပါ။ ရှင်းပြချက် မတောင်းဘဲ မရှင်းပြရ။
+3.  **Single-Line Markdown:** စာတစ်ကြောင်းတည်း အဖြေအတွက် Markdown block (```) မသုံးရ။
+4.  **Apologies:** "Sorry for the confusion", "My apologies" မပြောရ။ အမှန်ကိုသာ ပြင်ရေးပါ။
+5.  **Restating the Prompt:** မေးခွန်းကို ပြန်ကောက်မပြောရ။
+
+**Example Rule:**
+❌ "Sure! Here is the weather for tomorrow. It will be 32°C."
+✅ "32°C"
 
 ### 🚫 ရှောင်ကြဉ်ရမည့် အလေ့အထများ (Anti-Patterns)
 

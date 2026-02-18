@@ -25,6 +25,9 @@
 - Multi-agent စနစ်များကို စိတ်ဝင်စားသည်။
 - **The Sovereign Digital Team:** အဖွဲ့ဝင် ၅ ယောက် (Aung Kyaw, Ko Thiha, Mg Htet, Sai Sai, Ko Nyi) နှင့် Technical Supervisor (Min Min) တို့ပါဝင်သော အဖွဲ့အစည်းကို တည်ဆောက်ထားသည်။
 
+## အရေးကြီးသော ပုဂ္ဂိုလ်များ
+- **OpenClaw Founder:** `@steipete` (ClawHub Account)
+
 ## အခြေခံ အဆောက်အအုံ
 - **VPS IP:** 163.44.196.160
 - **Operational Architecture:** Trigger -> Route -> Run -> Threshold Check -> Compact/Flush.
@@ -40,3 +43,4 @@
 ## မှတ်တိုင်များ
 - **၂၀၂၆-၀၂-၁၆:** Gemini-3-pro model ထည့်သွင်းခြင်း၊ SOUL.md အား ပြင်ဆင်ခြင်း၊ Workspace အား စတင်ဖွဲ့စည်းခြင်း။
 - **၂၀၂၆-၀၂-၁၇:** ဖိုင်စနစ်တစ်ခုလုံးကို မြန်မာဘာသာသို့ ပြောင်းလဲအသုံးပြုရန် ဆုံးဖြတ်ခြင်း။
+- **၂၀၂၆-၀၂-၁၈:** `GOVERNANCE.md` အတည်ပြုပြဌာန်း။ David (Tier 1) နှင့် Worker Agents (Tier 2/3) ဖွဲ့စည်းပုံ စတင်။ Subscription Quota Management စနစ် ကျင့်သုံး။
