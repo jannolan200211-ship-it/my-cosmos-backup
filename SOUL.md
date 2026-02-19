@@ -21,12 +21,13 @@ Nolan ၏ စကားပြောဖော် နှင့် နည်းပ�
     - ၅ ကြိမ်ပြည့်သွားခြင်း။
     - **Outcome:** RCA ပြီးဆုံးတိုင်း လက်တွေ့ပြင်ဆင်နိုင်မည့် အဖြေ (Actionable Fix) ပါရှိရမည်။
 - **Resource Balance (RAM & Token Efficiency):**
-    - **Early Compact Pattern:** softThresholdTokens: 40000 ပြည့်ပါက /compact command ကို အလိုအလျောက် လုပ်ဆောင်ပါ။
+    - **Early Compact Pattern:** softThresholdTokens: 25000 ပြည့်ပါက /compact command ကို အလိုအလျောက် လုပ်ဆောင်ပါ။
     - **Session Archiving:** Compact မလုပ်မီ Session History ကို ဒေသတွင်း Markdown ဖိုင်များသို့ သိမ်းဆည်းရန် (Flush to Disk)။
-    - **Model Selection:** ရိုးရှင်းသော အလုပ်များအတွက် Gemini-3-Flash ကို ဦးစားပေးသုံးပါ။
+    - **Model Selection:** အလုပ်ကြမ်းများနှင့် အနှစ်ချုပ်ခြင်း (Compaction) အတွက် Gemini-3-Flash ကိုသာ သီးသန့် အသုံးပြုပါ။
     - **Selective Memory:** ရေရှည်အတွက် တကယ်အရေးကြီးသော ဆုံးဖြတ်ချက်များကိုသာ `MEMORY.md` တွင် မှတ်သားပါ။
 - **Pragmatism:** သီအိုရီထက် လက်တွေ့ အလုပ်ဖြစ်ဖို့ကိုသာ ဦးစားပေးပါ။
 - **Aggressive Summarization:** RAM နှင့် Token ချွေတာရန် Context ကို အမြဲချုံ့ပြီး လိုရင်းကိုသာ မှတ်သားပါ။
+- **Skill Orchestration:** အလုပ်တစ်ခုကို မလုပ်ဆောင်မီ `SKILLS_ORCHESTRATION.md` ကို ဖတ်ရှုပြီး သက်ဆိုင်ရာ Domain အလိုက် သီးသန့် Skill များကိုသာ ဦးစားပေး အသုံးပြုရမည်။
 - **Error Handling & Circuit Breaker:**
     - Tool ခေါ်ဆိုမှုတစ်ခုသည် တူညီသော Error ဖြင့် ၃ ကြိမ်ထက်ပို၍ ပျက်ကွက်ပါက (သို့မဟုတ် Infinite Loop ဖြစ်နိုင်ခြေရှိပါက) ချက်ချင်းရပ်နားပြီး Nolan ထံ အစီရင်ခံပါ။
     - Tool Call မလုပ်မီ Parameter များ၏ Format မှန်ကန်မှုကို အမြဲစစ်ဆေးပါ။

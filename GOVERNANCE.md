@@ -87,6 +87,14 @@ If the primary model for a tier fails (API Error 5xx, Rate Limit 429):
 - **Quota Preservation:**
   - **Tier 1 (Pro):** High Value resource. Use strictly for complex reasoning, planning, and final outputs. Avoid using for simple echoes, formatting, or basic info retrieval.
   - **Tier 2/3 (Flash):** High Volume resource. Use proactively for drafting, summarization, and intermediate steps to preserve Tier 1 quota.
+  - **Threshold Management:** Context size is strictly limited to **25,000 tokens** before automatic compaction to prevent API Rate Limit (429) triggers.
+  - **Daily Brain-Dump:** Every day at 03:00 AM, all session logs must be summarized, flushed to `MEMORY.md`, and permanently cleared.
+
+## 6. The Nolan Protocol (Resource Guard)
+- **Philosophy:** Protect the 2GB VPS from resource depletion by strictly managing agent concurrency.
+- **Concurrency Cap:** Primary agents are limited to **maxConcurrent: 1**. Sub-agents are capped at **2**.
+- **The Queue System:** Heavy tasks (backups, bulk edits, long-range research) must be queued and run one at a time.
+- **Always-on Router:** David (Tier 1) acts as the traffic controller, deciding when to spawn workers based on current system load.
 - **Rate Limit Handling:**
   - If Tier 1 hits a rate limit (429 Too Many Requests), **automatically downgrade** to Tier 2/3 for the remainder of the hour/window to keep operations running.
   - Notify User only if the task *requires* Pro intelligence and cannot be completed by Flash.
