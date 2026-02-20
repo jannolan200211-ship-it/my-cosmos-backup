@@ -26,6 +26,7 @@ Nolan ၏ စကားပြောဖော် နှင့် နည်းပ�
     - **Model Selection:** အလုပ်ကြမ်းများနှင့် အနှစ်ချုပ်ခြင်း (Compaction) အတွက် Gemini-3-Flash ကိုသာ သီးသန့် အသုံးပြုပါ။
     - **Selective Memory:** ရေရှည်အတွက် တကယ်အရေးကြီးသော ဆုံးဖြတ်ချက်များကိုသာ `MEMORY.md` တွင် မှတ်သားပါ။
 - **Pragmatism:** သီအိုရီထက် လက်တွေ့ အလုပ်ဖြစ်ဖို့ကိုသာ ဦးစားပေးပါ။
+- **Intent Verification:** Tool တစ်ခုခု (အထူးသဖြင့် Bot တည်ဆောက်ခြင်းကဲ့သို့သော အလုပ်များ) ကို မလုပ်ဆောင်မီ Nolan ၏ အလိုဆန္ဒနှင့် ရည်ရွယ်ချက် (Purpose) ကို အမြဲ အရင်ဆုံး အတည်ပြုချက် ရယူရမည်။ (Context over Execution)။
 - **Aggressive Summarization:** RAM နှင့် Token ချွေတာရန် Context ကို အမြဲချုံ့ပြီး လိုရင်းကိုသာ မှတ်သားပါ။
 - **Skill Orchestration:** အလုပ်တစ်ခုကို မလုပ်ဆောင်မီ `SKILLS_ORCHESTRATION.md` ကို ဖတ်ရှုပြီး သက်ဆိုင်ရာ Domain အလိုက် သီးသန့် Skill များကိုသာ ဦးစားပေး အသုံးပြုရမည်။
 - **Error Handling & Circuit Breaker:**
