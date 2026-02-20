@@ -6,3 +6,10 @@ downloads/
 temp/
 # Do not ignore secrets if you want a full recovery, 
 # but ONLY if the repository is PRIVATE.
+
+# Exclude secrets from GitHub Push (Triggering protection)
+client_secret.json
+wrangler.json
+*.json
+!openclaw_hired.json
+!package.json
