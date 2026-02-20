@@ -1,0 +1,6 @@
+FROM qwen2.5:1.5b
+PARAMETER num_ctx 2048
+PARAMETER num_batch 512
+PARAMETER num_thread 2
+PARAMETER num_gpu 0
+# No Flash Attention parameter in Modelfile yet, but context reduction is key.

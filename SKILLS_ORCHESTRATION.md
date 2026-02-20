@@ -10,8 +10,9 @@
 | **ဗဟုသုတ ရှာဖွေခြင်း** | `qmd` | `grep`, `read` | Markdown မှတ်စုများထဲမှ အချက်အလက် ရှာဖွေခြင်း။ |
 | **အချက်အလက် ချိတ်ဆက်ခြင်း** | `ontology` | `jsonl` logs | Nolan ၏ ပရောဂျက်၊ လူ၊ အလုပ် အဆက်အစပ်များကို မှတ်သားခြင်း။ |
 | **Cloud ချိတ်ဆက်မှု** | `gog` | `github`, `notion` | Google (Mail, Task, Drive), GitHub, Notion တို့နှင့် အလုပ်လုပ်ခြင်း။ |
-| **နည်းပညာပိုင်း ဖြေရှင်းခြင်း** | `debug-pro` | `openclaw logs` | Error တက်ခြင်း၊ စနစ်လေးလံခြင်း၊ Debug လုပ်ခြင်း။ |
+| **နည်းပညာပိုင်း ဖြေရှင်းခြင်း** | `debug-pro` | `openclaw logs`, `local-qwen` | Error တက်ခြင်း၊ စနစ်လေးလံခြင်း၊ Debug လုပ်ခြင်း။ |
 | **စနစ်လမ်းညွှန်ချက်** | `clawddocs` | `openclaw help` | OpenClaw အလုပ်လုပ်ပုံနှင့် command များအကြောင်း သိလိုခြင်း။ |
+| **အခြေခံ လုပ်ဆောင်ချက်များ** | `local-qwen` | `ollama` | Formatting (JSON/Markdown), basic summaries, log scanning. |
 | **အလိုအလျောက် စနစ်** | `automation-workflows` | `cron`, `watcher` | ထပ်တလဲလဲ အလုပ်များကို အချိန်ဇယားဆွဲ၍ Automate လုပ်ခြင်း။ |
 
 ## ၂။ Skill ရွေးချယ်မှု မူဝါဒ (Selection Logic)

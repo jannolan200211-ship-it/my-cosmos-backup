@@ -19,5 +19,14 @@
 - **Thought Exercise:** Why is it important for an agent to "Think" before using a tool? (Hint: Safety and Accuracy).
 - **Nolan's Insight:** Like a human, an agent needs to plan and identify necessary resources (like a pencil and paper) before starting a task.
 
+### [2026-02-20] Lesson 3: Memory Systems (Context vs. Persistence) - COMPLETED ✅
+- **Concept:** An agent has two types of "brains": 
+    1. **Short-term (Context):** What we are talking about right now. It is fast but gets full (API limits).
+    2. **Long-term (Persistence):** Files like `MEMORY.md`. It stays even if the session is deleted.
+- **Task:** Think of one important fact about your work or a preference you have. Ask me to "Remember this in my long-term memory."
+- **Experiment:** After I confirm, ask me "David, what do you know about [that topic]?" and see how I use the `memory_search` tool to find it.
+- **Thought Exercise:** How does having a "Long-term Memory" make an agent more like a real assistant?
+- **Nolan's Insight:** Just like a human, if you teach them, they can learn and show progress, which makes them feel like a real assistant.
+
 ---
 *Stay consistent. 1% every day makes you 37x better in a year.*

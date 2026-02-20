@@ -31,6 +31,14 @@
   - High-volume, low-complexity data processing.
 - **Access Level:** Read-Only or heavily restricted Write access.
 
+### 🏠 Tier 4: Local Workers (Offline & Privacy)
+- **Role:** Non-reasoning tasks, basic text processing, formatting, simple summaries, and internal log analysis.
+- **Model:** `qwen-opt` (via Ollama on VPS)
+- **Scope:** 
+  - Formatting (JSON/Markdown), basic summarization, log scanning, simple echoes.
+  - **New Policy:** All tasks that do not require complex "thinking" or high-level reasoning must be routed here to save API quota.
+- **Access Level:** Local command execution only.
+
 ---
 
 ## 2. AI Model Routing & Fallback Policy
@@ -40,6 +48,7 @@
    - *High Complexity/Reasoning?* -> Route to Tier 1 (`gemini-3-pro`).
    - *Specific Skill?* -> Route to Tier 2 (`gemini-2.0-flash`).
    - *Repetitive/Simple?* -> Route to Tier 3 (`gemini-1.5-flash`).
+   - *Basic Formatting/Log Scanning?* -> Route to Tier 4 (`local-qwen`).
 
 ### Backup Plan (Resilience)
 If the primary model for a tier fails (API Error 5xx, Rate Limit 429):
