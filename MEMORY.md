@@ -29,6 +29,7 @@
 - **The Sovereign Digital Team:** အဖွဲ့ဝင် ၅ ယောက် (Aung Kyaw, Ko Thiha, Mg Htet, Sai Sai, Ko Nyi) နှင့် Technical Supervisor (Min Min) တို့ပါဝင်သော အဖွဲ့အစည်းကို တည်ဆောက်ထားသည်။
 
 ### ⏳ Wait List (နောင်တွင် လုပ်ဆောင်ရန်)
+- **Business Team Strategy (Roadmap):** "Manager Layer" (David/James) သည် Gemini (Cloud) ကို သုံး၍ အလုပ်များကို ခွဲခြမ်းစိတ်ဖြာပြီး၊ "Micro-worker Layer" (Workers) များသည် VPS ပေါ်ရှိ Local AI (Tier 4) ကိုသာ သုံးစွဲမည့် Hybrid Concept ကို သဘောတူညီထားသည်။ (Wait for Nolan's instruction to implement).
 - **RAT Project (Retrieval Augmented Thinking):** DeepSeek-R1 ၏ reasoning အား အသုံးပြု၍ အဖြေများ ပိုမိုကောင်းမွန်အောင် ပြုလုပ်မည့် စနစ်။ (ဘတ်ဂျက်အခြေအနေကြောင့် ၂၀၂၆-၀၂-၂၀ တွင် ခေတ္တရပ်နားထားသည်)။
 - **ClawRouter Project:** USDC on Base wallet စနစ်ကို အသုံးပြု၍ AI model များကို စရိတ်သက်သာစွာဖြင့် စမတ်ကျကျ ရွေးချယ်အသုံးပြုမည့်စနစ်။ (ဘတ်ဂျက်အခြေအနေကြောင့် ၂၀၂၆-၀၂-၂၀ တွင် ခေတ္တရပ်နားထားသည်)။
 
@@ -38,7 +39,8 @@
 ## အခြေခံ အဆောက်အအုံ
 - **VPS IP:** 163.44.196.160
 - **Operational Architecture:** Trigger -> Route -> Run -> Threshold Check -> Compact/Flush.
-- **Cost Strategy:** Coordinator vs Worker pattern (Gemini-3-Flash for workers).
+- **Cost Strategy:** David (Main Agent) အတွက် Gemini-3-Flash ကို သုံးပြီး ရှုပ်ထွေးသော အလုပ်များ (Complex Tasks) အတွက် Gemini-3-Pro ကို အသုံးပြုမည်။ (Update: ၂၀၂၆-၀၂-၂၁)။
+- **Tier 4 Usage:** Thinking မလိုသော အလုပ်များအတွက် Local Qwen 2.5 (Tier 4) ကို ဦးစားပေးသုံးမည်။
 
 ## လုံခြုံရေးနှင့် စနစ်ဆိုင်ရာ မူဝါဒများ
 ၁။ **Gateway-mediated Mediation:** AI အေးဂျင့်နှင့် OS အကြား ဆက်သွယ်မှုတိုင်းကို Gateway မှတစ်ဆင့်သာ လုပ်ဆောင်။
@@ -53,3 +55,4 @@
 - **၂၀၂၆-၀၂-၁၈:** `GOVERNANCE.md` အတည်ပြုပြဌာန်း။ David (Tier 1) နှင့် Worker Agents (Tier 2/3) ဖွဲ့စည်းပုံ စတင်။ Subscription Quota Management စနစ် ကျင့်သုံး။
 - **၂၀၂၆-၀၂-၁၉:** API Rate Limit ပြဿနာအား RCA ပြုလုပ်၍ အမြဲတမ်း ဖြေရှင်းခဲ့သည်။ နေ့စဉ် Session များအား အနှစ်ချုပ်၍ ရှင်းလင်းမည့် "Daily Session Reset" မူဝါဒအား စတင်ကျင့်သုံး။ API Limit အား ကာကွယ်ရန် Threshold ကို ၂၅,၀၀၀ သို့ လျှော့ချ၍ စနစ်အား Hardening ပြုလုပ်ခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၀:** Cloudflare Workers + Telegram + GitHub အား ပေါင်းစပ်၍ "Second Brain" စနစ်ကို အောင်မြင်စွာ တည်ဆောက်ခဲ့သည်။ နောင်တွင် Bot များ တည်ဆောက်ပါက အသုံးပြုရန် `BOT_WORKFLOW.md` အား စံသတ်မှတ်ချက်အဖြစ် အတည်ပြုခဲ့သည်။ Ollama မှတစ်ဆင့် Qwen 2.5-1.5B model အား VPS တွင် တပ်ဆင်ပြီး အခြေခံအလုပ်များအတွက် "Tier 4: Local Worker" အဖြစ် စတင်အသုံးပြုခဲ့သည်။ ၂ဂျီဘီ VPS ၏ စွမ်းဆောင်ရည်ကို မြှင့်တင်ရန် ZRAM (1GB compressed memory) ကို အောင်မြင်စွာ တပ်ဆင်ခဲ့သည်။ KV Cache Optimization အတွက် `qwen-opt` မော်ဒယ်ကို အောင်မြင်စွာ တည်ဆောက်ခဲ့သည်။ (Technical Update: KV Cache နှင့် Memory Math ဆိုင်ရာ ချိန်ညှိချက်များကို `VPS_OPTIMIZATION.md` တွင် မှတ်တမ်းတင်ခဲ့သည်)။
+- **၂၀၂၆-၀၂-၂၁:** Gmail profiles အဟောင်းများနှင့် အသုံးမလိုသော OpenRouter models များကို ရှင်းလင်းခဲ့သည်။ Model Strategy အသစ် (Flash for David, Pro for Complex) ကို စတင်ကျင့်သုံးခဲ့သည်။ Business Team အား Local AI Workforce အဖြစ် ပြောင်းလဲရန် Roadmap အား အတည်ပြုခဲ့သည်။ **VPS Hardening:** ZRAM (Zstd) အား ချိန်ညှိခဲ့ပြီး၊ `limits.conf` တွင် File Descriptors (65,535) နှင့် Process Limits (16,384) တို့ကို တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။ **Swappiness:** ၁၅၀ သို့ တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။
