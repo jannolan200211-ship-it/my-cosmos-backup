@@ -27,7 +27,7 @@
 
 ## ၄။ 📂 03 Reference
 - **01 Documentation:** `docs/`, `LEARNING_TRACKER.md`, `CLAWDECK.md`, `CONTEXT.md`, `Advanced_Document_Control.md`, `System_Architecture_Report.md`, `Autonomous_Agent_Framework.md`, `Multi_Agent_Orchestration.md`, `Systemic_Success_Architect.md`
-- **02 System Configs:** `skills/` (self-improvement/templates), `scripts/` (clawdeck_poll.py, etc.), `vps/`, `config/`, `secrets/`, `CONFIG_SNIPPETS.md`
+- **02 System Configs:** `skills/` (self-improvement/templates/hooks), `scripts/` (clawdeck_poll.py, etc.), `vps/`, `config/`, `secrets/`, `CONFIG_SNIPPETS.md`
 - **03 Tech Specs:** `VPS_OPTIMIZATION.md`, `token_comparison.md`, `ROOT_CAUSES.md`
 
 ## ၅။ 📂 04 Quick Share
