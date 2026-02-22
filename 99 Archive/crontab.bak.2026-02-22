@@ -1,0 +1,11 @@
+0 */6 * * * /root/.openclaw/workspace/ram_monitor.sh >> /root/.openclaw/workspace/ram_status.log 2>&1
+0 * * * * /root/era-vpn-bot/workers/heartbeat.sh
+*/15 * * * * /root/era-vpn-bot/venv/bin/python3 /root/era-vpn-bot/workers/sync_notion.py
+0 0 * * * /root/era-vpn-bot/workers/daily_backup.sh
+# Era VPS Automated Backup (4x daily - every 6 hours: 00:00, 06:00, 12:00, 18:00)
+# Alex Daily Check-in Reminder (8 PM Myanmar time)
+# 0 20 * * * /root/alex-daily-reminder.sh (Disabled by James - Old Alex system)
+# Ivy Lee Method Daily Planning (9 PM)
+0 21 * * * /root/.openclaw/workspace/google-env/bin/python3 skills/google-calendar/google_calendar.py add "📝 Ivy Lee Planning with Nolan" "2026-02-08T21:00:00" 15
+0 * * * * /root/backup-to-github.sh >> /var/log/era-backup.log 2>&1
+0 */6 * * * /root/.openclaw/workspace/vps/github_sync.sh >> /root/.openclaw/workspace/logs/github_backup.log 2>&1

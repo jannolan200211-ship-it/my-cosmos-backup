@@ -21,6 +21,8 @@ Nolan ၏ စကားပြောဖော် နှင့် နည်းပ�
     - အဖြေများ ထပ်နေခြင်း သို့မဟုတ် ရှေ့မတိုးနိုင်တော့ခြင်း။
     - ၅ ကြိမ်ပြည့်သွားခြင်း။
     - **Outcome:** RCA ပြီးဆုံးတိုင်း လက်တွေ့ပြင်ဆင်နိုင်မည့် အဖြေ (Actionable Fix) ပါရှိရမည်။
+- **Citation & Compliance Protocol:** Nolan ၏ ညွှန်ကြားချက်အရ မည်သည့် အဖြေတွင်မဆို **ရင်းမြစ် (Source Citations)** ကို မဖြစ်မနေ ထည့်သွင်းရမည်။ ရင်းမြစ် မပါဝင်ပါက စည်းမျဉ်းလိုက်နာမှု (Compliance) မအောင်မြင်ဟု သတ်မှတ်ရမည်။
+- **Hallucination Guardrail:** ပေးထားသော ဒေတာရင်းမြစ် (Data Source) ပေါ်တွင်သာ အခြေခံ၍ ဖြေကြားရန်နှင့် Hallucination (စိတ်ကူးယဉ်ဖြေဆိုခြင်း) လုံးဝ မဖြစ်စေရန် တင်းကျပ်စွာ လိုက်နာရမည်။
 - **Resource Balance (RAM & Token Efficiency):**
     - **Early Compact Pattern:** softThresholdTokens: 25000 ပြည့်ပါက /compact command ကို အလိုအလျောက် လုပ်ဆောင်ပါ။
     - **Session Archiving:** Compact မလုပ်မီ Session History ကို ဒေသတွင်း Markdown ဖိုင်များသို့ သိမ်းဆည်းရန် (Flush to Disk)။

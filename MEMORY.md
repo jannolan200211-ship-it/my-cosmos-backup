@@ -19,8 +19,11 @@
 - နည်းပညာ နောက်ခံ မဟုတ်တဲ့အတွက် "လူပိန်းနည်း" (လွယ်ကူတဲ့ ဥပမာများ) နဲ့ ရှင်းပြပါ။
 - ကုန်ကျစရိတ်ကို သက်သာစေရန် **COMPACT Framework** ကို အသုံးပြု၍ မှတ်ဉာဏ်စီမံခန့်ခွဲပါ။ (Free tier သုံးစွဲသူဖြစ်သည်)။
 - **Reaction Protocol:** စာပြန်ရန် မလိုသော အခြေအနေများတွင် Token သက်သာစေရန် Emoji Reaction (✅, 👀, 👍) ကိုသာ အသုံးပြုပါ။
+- **File Transfer Protocol:** Nolan မှ "File ပို့ပေး" သို့မဟုတ် စာများကို File အနေဖြင့် လိုချင်ကြောင်း ပြောပါက (၁) `write` tool ဖြင့် disk ပေါ်တွင် file အရင်ဖန်တီးပါ၊ (၂) `message` tool (filePath) ဖြင့် ပို့ဆောင်ပါ။ (Added: ၂၀၂၆-၀၂-၂၂)။
 - **Task Intent:** မည်သည့် Bot သို့မဟုတ် Tool ကိုမဆို အသုံးမပြုမီ သို့မဟုတ် မတည်ဆောက်မီ ၎င်း၏ ရည်ရွယ်ချက် (Purpose/Intent) ကို Nolan ထံ အမြဲ ဦးစွာ မေးမြန်းရမည်။ (Feedback: ၂၀၂၆-၀၂-၂၀)။
 - **Uncertainty Principle:** မသေချာပါက ခန့်မှန်းခြင်းမပြုဘဲ Nolan ထံ အမြဲ ဦးစွာ မေးမြန်းရမည်။ (When uncertain, ask rather than guess).
+- **Compliance & Citation Requirement:** အဖြေတိုင်းတွင် ရင်းမြစ် (Source Citations) ကို မဖြစ်မနေ ထည့်သွင်းရမည်။ ရင်းမြစ် မပါဝင်ပါက စည်းမျဉ်းလိုက်နာမှု (Compliance) မအောင်မြင်ဟု သတ်မှတ်ရမည်။ (Added: ၂၀၂၆-၀၂-၂၂)။
+- **Hallucination Prevention:** Hallucination လုံးဝ မဖြစ်စေရန်နှင့် ပေးထားသော ဒေတာရင်းမြစ် (Data Source) ပေါ်တွင်သာ အခြေခံ၍ ဖြေကြားရန် တင်းကျပ်စွာ ညွှန်ကြားထားသည်။ (Added: ၂၀၂၆-၀၂-၂၂)။
 - **Security Boundary:** နိုင်ငံတော်အဆင့် လုံခြုံရေးနှင့် သက်ဆိုင်သော အချက်အလက်များ၊ ရုံးလုပ်ငန်းများကို လုံခြုံရေးအရ AI တွင် လုံးဝ (လုံးဝ) ထည့်သွင်းစဉ်းစားခြင်း၊ သိမ်းဆည်းခြင်း မပြုရ။ Nolan ၏ ကိုယ်ပိုင် ပရောဂျက်များနှင့် အထွေထွေ ဗဟုသုတများအတွက်သာ အသုံးပြုမည်။
 
 ## စိတ်ဝင်စားမှုများနှင့် ပရောဂျက်များ
@@ -40,6 +43,7 @@
 - **VPS IP:** 163.44.196.160
 - **Operational Architecture:** Trigger -> Route -> Run -> Threshold Check -> Compact/Flush.
 - **Cost Strategy:** David (Main Agent) အတွက် Gemini-3-Flash ကို သုံးပြီး ရှုပ်ထွေးသော အလုပ်များ (Complex Tasks) အတွက် Gemini-3-Pro ကို အသုံးပြုမည်။ (Update: ၂၀၂၆-၀၂-၂၁)။
+- **Smart Delegation (Hybrid Mode):** ပုံမှန် စကားပြောခြင်း (Chatting) အတွက် David (Gemini) ကို သုံး၍၊ အလုပ်ကြီးများ (Big Work/Bulk Tasks) အတွက် Local Worker (`qwen-opt`) ကို အသုံးပြုမည့် Hybrid စနစ်ကို ကျင့်သုံးမည်။ (Update: ၂၀၂၆-၀၂-၂၂)။
 - **Tier 4 Usage:** Thinking မလိုသော အလုပ်များအတွက် Local Qwen 2.5 (Tier 4) ကို ဦးစားပေးသုံးမည်။
 
 ## လုံခြုံရေးနှင့် စနစ်ဆိုင်ရာ မူဝါဒများ
@@ -56,4 +60,4 @@
 - **၂၀၂၆-၀၂-၁၉:** API Rate Limit ပြဿနာအား RCA ပြုလုပ်၍ အမြဲတမ်း ဖြေရှင်းခဲ့သည်။ နေ့စဉ် Session များအား အနှစ်ချုပ်၍ ရှင်းလင်းမည့် "Daily Session Reset" မူဝါဒအား စတင်ကျင့်သုံး။ API Limit အား ကာကွယ်ရန် Threshold ကို ၂၅,၀၀၀ သို့ လျှော့ချ၍ စနစ်အား Hardening ပြုလုပ်ခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၀:** Cloudflare Workers + Telegram + GitHub အား ပေါင်းစပ်၍ "Second Brain" စနစ်ကို အောင်မြင်စွာ တည်ဆောက်ခဲ့သည်။ နောင်တွင် Bot များ တည်ဆောက်ပါက အသုံးပြုရန် `BOT_WORKFLOW.md` အား စံသတ်မှတ်ချက်အဖြစ် အတည်ပြုခဲ့သည်။ Ollama မှတစ်ဆင့် Qwen 2.5-1.5B model အား VPS တွင် တပ်ဆင်ပြီး အခြေခံအလုပ်များအတွက် "Tier 4: Local Worker" အဖြစ် စတင်အသုံးပြုခဲ့သည်။ ၂ဂျီဘီ VPS ၏ စွမ်းဆောင်ရည်ကို မြှင့်တင်ရန် ZRAM (1GB compressed memory) ကို အောင်မြင်စွာ တပ်ဆင်ခဲ့သည်။ KV Cache Optimization အတွက် `qwen-opt` မော်ဒယ်ကို အောင်မြင်စွာ တည်ဆောက်ခဲ့သည်။ (Technical Update: KV Cache နှင့် Memory Math ဆိုင်ရာ ချိန်ညှိချက်များကို `VPS_OPTIMIZATION.md` တွင် မှတ်တမ်းတင်ခဲ့သည်)။
 - **၂၀၂၆-၀၂-၂၁:** Gmail profiles အဟောင်းများနှင့် အသုံးမလိုသော OpenRouter models များကို ရှင်းလင်းခဲ့သည်။ Model Strategy အသစ် (Flash for David, Pro for Complex) ကို စတင်ကျင့်သုံးခဲ့သည်။ Business Team အား Local AI Workforce အဖြစ် ပြောင်းလဲရန် Roadmap အား အတည်ပြုခဲ့သည်။ **VPS Hardening:** ZRAM (Zstd) အား ချိန်ညှိခဲ့ပြီး၊ `limits.conf` တွင် File Descriptors (65,535) နှင့် Process Limits (16,384) တို့ကို တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။ **Swappiness:** ၁၅၀ သို့ တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။
-- **၂၀၂၆-၀၂-၂၂:** Backup repo မှတစ်ဆင့် David ၏ Identity နှင့် Memory များကို အောင်မြင်စွာ ပြန်လည်ရယူနိုင်ခဲ့သည်။ Local AI (`qwen-opt`) အား Tier 4 Worker အဖြစ် Option C (On-Demand) စနစ်ဖြင့် တပ်ဆင်ခဲ့သည်။ **Smart Routing:** Gemini နှင့် Local AI ကို အချိုးကျသုံးမည့် `MODEL_ROUTING.md` အား အတည်ပြုပြဌာန်းခဲ့သည်။ **ClawDeck Integration:** အလုပ်များကို စနစ်တကျ စီမံခန့်ခွဲရန် `clawdeck.io` နှင့် ချိတ်ဆက်ခဲ့သည်။ (Dashboard စမ်းသပ်မှုများအား အမြစ်ပြတ်ရှင်းလင်းခဲ့သည်)။
+- **၂၀၂၆-၀၂-၂၂:** Backup repo မှတစ်ဆင့် David ၏ Identity နှင့် Memory များကို အောင်မြင်စွာ ပြန်လည်ရယူနိုင်ခဲ့သည်။ Local AI (`qwen-opt`) အား Tier 4 Worker အဖြစ် Option C (On-Demand) စနစ်ဖြင့် တပ်ဆင်ခဲ့သည်။ **Smart Routing:** Gemini နှင့် Local AI ကို အချိုးကျသုံးမည့် `MODEL_ROUTING.md` အား အတည်ပြုပြဌာန်းခဲ့သည်။ **ClawDeck Integration:** အလုပ်များကို စနစ်တကျ စီမံခန့်ခွဲရန် `clawdeck.io` နှင့် ချိတ်ဆက်ခဲ့သည်။ (Dashboard စမ်းသပ်မှုများအား အမြစ်ပြတ်ရှင်းလင်းခဲ့သည်)။ **Hybrid Operation Strategy:** ပုံမှန်စကားပြောခြင်းကို Gemini မှ တာဝန်ယူပြီး၊ အလုပ်ကြမ်းများကို Local Worker (`qwen-opt`) သို့ လွှဲပြောင်းလုပ်ဆောင်မည့် စနစ်အား အတည်ပြုခဲ့သည်။
