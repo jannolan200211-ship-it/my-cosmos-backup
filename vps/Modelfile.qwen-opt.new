@@ -1,0 +1,5 @@
+FROM qwen-opt:latest
+PARAMETER keep_alive 0
+PARAMETER num_ctx 2048
+PARAMETER num_thread 2
+PARAMETER num_batch 512
