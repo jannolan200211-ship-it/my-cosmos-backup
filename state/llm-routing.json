@@ -1,0 +1,28 @@
+{
+  "claude": {
+    "session": {
+      "used_pct": 0.31853,
+      "remaining_pct": 0.68147,
+      "resets_in": "Daily"
+    },
+    "weekly_all_models": {
+      "used_pct": 0.31853,
+      "remaining_pct": 0.68147,
+      "resets": "Sunday"
+    },
+    "last_synced": "2026-02-22T08:33:42Z"
+  },
+  "codex": {
+    "sessions_today": 0,
+    "tasks_today": 0,
+    "usage_5h_pct": 5,
+    "usage_day_pct": 5
+  },
+  "routing": {
+    "total_tasks": 1,
+    "claude_tasks": 1,
+    "codex_tasks": 0,
+    "claude_pct": 100,
+    "codex_pct": 0
+  }
+}
