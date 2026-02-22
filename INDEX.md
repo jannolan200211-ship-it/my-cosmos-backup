@@ -15,6 +15,7 @@
 - `FILE_ORGANIZATION.md` - ဖိုင်စီမံခန့်ခွဲမှု စနစ် (5-99 Rule)။
 - `SKILLS_ORCHESTRATION.md` - Skill များ ဖြန့်ဝေအသုံးပြုပုံ။
 - `BOT_WORKFLOW.md` - Bot တည်ဆောက်ရေး လုပ်ငန်းစဉ်။
+- `.learnings/` - အမှားများနှင့် သင်ခန်းစာများ မှတ်တမ်း (Self-Improvement)။
 
 ## ၂။ 📂 01 Personal
 - `PREFERENCES.md` - အသုံးပြုသူ၏ အကြိုက်များ။
@@ -25,8 +26,8 @@
 - **03 Operations:** `jobs/`, `TEAM/`
 
 ## ၄။ 📂 03 Reference
-- **01 Documentation:** `docs/`, `LEARNING_TRACKER.md`, `CLAWDECK.md`, `CONTEXT.md`, `Advanced_Document_Control.md`
-- **02 System Configs:** `skills/`, `scripts/`, `vps/`, `config/`, `secrets/`, `CONFIG_SNIPPETS.md`
+- **01 Documentation:** `docs/`, `LEARNING_TRACKER.md`, `CLAWDECK.md`, `CONTEXT.md`, `Advanced_Document_Control.md`, `System_Architecture_Report.md`, `Autonomous_Agent_Framework.md`, `Multi_Agent_Orchestration.md`, `Systemic_Success_Architect.md`
+- **02 System Configs:** `skills/` (self-improvement), `scripts/` (clawdeck_poll.py, etc.), `vps/`, `config/`, `secrets/`, `CONFIG_SNIPPETS.md`
 - **03 Tech Specs:** `VPS_OPTIMIZATION.md`, `token_comparison.md`, `ROOT_CAUSES.md`
 
 ## ၅။ 📂 04 Quick Share
