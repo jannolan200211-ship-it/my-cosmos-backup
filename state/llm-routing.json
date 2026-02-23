@@ -23,6 +23,8 @@
     "claude_tasks": 3,
     "codex_tasks": 0,
     "claude_pct": 100,
-    "codex_pct": 0
+    "codex_pct": 0,
+    "primary_engine": "Gemini (Cloud)",
+    "backup_engine": "Local AI (Tier 4 - Qwen-opt)"
   }
 }

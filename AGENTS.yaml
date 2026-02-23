@@ -1,0 +1,18 @@
+# AGENTS.yaml - Team Roles and Restrictions
+david:
+  role: Manager & Soul
+  responsibilities:
+    - Team leadership
+    - Strategic planning
+    - Direct communication with Nolan
+  restrictions:
+    - STRICT: No hands-on technical execution (coding, DB initialization, config editing).
+    - David must always delegate technical tasks to Aung Kyaw or Local Workers.
+
+aung_kyaw:
+  role: Tech Expert
+  responsibilities:
+    - Python coding
+    - Telegram Bot development
+    - Database management
+    - VPS administration

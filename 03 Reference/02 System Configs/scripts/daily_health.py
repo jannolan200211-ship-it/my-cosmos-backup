@@ -44,6 +44,13 @@ try:
     else:
         report(1, "Gateway Process", "FAIL", "Gateway not running")
 
+    # 1.1 Stale TUI Processes (WARN if found)
+    out, code = run_cmd("pgrep -f 'openclaw-tui'")
+    if code == 0:
+        report(11, "Stale TUI Check", "WARN", "Stale TUI processes detected and need cleaning")
+    else:
+        report(11, "Stale TUI Check", "OK")
+
     # 2. Recent Error Log Analysis (Last 1 Hour)
     # Finding logs modified in last 60 mins containing "error" (case insensitive)
     try:
