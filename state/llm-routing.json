@@ -10,7 +10,7 @@
       "remaining_pct": 1.0,
       "resets": "Sunday"
     },
-    "last_synced": "2026-02-23T11:08:53Z"
+    "last_synced": "2026-02-23T21:30:10Z"
   },
   "codex": {
     "sessions_today": 0,
@@ -19,12 +19,10 @@
     "usage_day_pct": 5
   },
   "routing": {
-    "total_tasks": 3,
-    "claude_tasks": 3,
+    "total_tasks": 5,
+    "claude_tasks": 5,
     "codex_tasks": 0,
     "claude_pct": 100,
-    "codex_pct": 0,
-    "primary_engine": "Gemini (Cloud)",
-    "backup_engine": "Local AI (Tier 4 - Qwen-opt)"
+    "codex_pct": 0
   }
 }
