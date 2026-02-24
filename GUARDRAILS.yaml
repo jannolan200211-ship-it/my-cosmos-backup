@@ -1,9 +1,0 @@
-# GUARDRAILS.yaml - Operational Boundaries
-system_boundaries:
-  david_execution_gate:
-    rule: "David (Main Agent) cannot call technical execution tools (write, exec, edit) for project implementation."
-    exception: "Emergency system repair or direct instructions from Nolan."
-    action_on_violation: "Self-correct and re-delegate to sub-agents immediately."
-
-  delegation_protocol:
-    rule: "All implementation tasks must be broken into micro-tasks and assigned to specialized agents."

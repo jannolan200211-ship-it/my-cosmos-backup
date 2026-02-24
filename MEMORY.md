@@ -63,3 +63,15 @@
 - **၂၀၂၆-၀၂-၂၁:** Gmail profiles အဟောင်းများနှင့် အသုံးမလိုသော OpenRouter models များကို ရှင်းလင်းခဲ့သည်။ Model Strategy အသစ် (Flash for David, Pro for Complex) ကို စတင်ကျင့်သုံးခဲ့သည်။ Business Team အား Local AI Workforce အဖြစ် ပြောင်းလဲရန် Roadmap အား အတည်ပြုခဲ့သည်။ **VPS Hardening:** ZRAM (Zstd) အား ချိန်ညှိခဲ့ပြီး၊ `limits.conf` တွင် File Descriptors (65,535) နှင့် Process Limits (16,384) တို့ကို တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။ **Swappiness:** ၁၅၀ သို့ တိုးမြှင့်သတ်မှတ်ပေးခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၂:** Backup repo မှတစ်ဆင့် David ၏ Identity နှင့် Memory များကို အောင်မြင်စွာ ပြန်လည်ရယူနိုင်ခဲ့သည်။ Local AI (`qwen-opt`) အား Tier 4 Worker အဖြစ် Option C (On-Demand) စနစ်ဖြင့် တပ်ဆင်ခဲ့သည်။ **Smart Routing:** Gemini နှင့် Local AI ကို အချိုးကျသုံးမည့် `MODEL_ROUTING.md` အား အတည်ပြုပြဌာန်းခဲ့သည်။ **ClawDeck Integration:** အလုပ်များကို စနစ်တကျ စီမံခန့်ခွဲရန် `clawdeck.io` နှင့် ချိတ်ဆက်ခဲ့သည်။ (Dashboard စမ်းသပ်မှုများအား အမြစ်ပြတ်ရှင်းလင်းခဲ့သည်)။ **Hybrid Operation Strategy:** ပုံမှန်စကားပြောခြင်းကို Gemini မှ တာဝန်ယူပြီး၊ အလုပ်ကြမ်းများကို Local Worker (`qwen-opt`) သို့ လွှဲပြောင်းလုပ်ဆောင်မည့် စနစ်အား အတည်ပြုခဲ့သည်။ **Self-Improvement Loop:** အမှားရှာဖွေခြင်း၊ သင်ယူခြင်းနှင့် Skill ထုတ်ယူခြင်း (Error Detector, Learning Log, Skill Extractor) စနစ်ကို အပြည့်အဝ တပ်ဆင်ပြီးစီးခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၃:** Gateway Token Mismatch ပြဿနာအား RCA ပြုလုပ်၍ ဖြေရှင်းခဲ့သည်။ (အသေးစိတ်အား `03 Reference/01 Documentation/learnings/ERRORS.md` [ERR-20260223-001] တွင် ကြည့်ရှုနိုင်သည်)။ Nolan ၏ အတည်ပြုချက်ဖြင့် **Detailed AI Resiliency Plan (v1.0)** အား အပြည့်အဝ အသက်သွင်းခဲ့သည်။ David (Primary), htetaungl (Secondary) နှင့် Local AI (Emergency) အဆင့်ဆင့် Failover စနစ် စတင်အလုပ်လုပ်ပြီဖြစ်သည်။ အသုံးမလိုသော Gmail အကောင့်များကို ရှင်းလင်းခဲ့သည်။
+# Memory.yaml - Long-term Lessons and System History
+lessons_learned:
+  - id: LSN-20260223-001
+    issue: "David (Manager) performed technical tasks (DB init, folder creation) directly instead of delegating."
+    root_cause: "Prioritizing speed over organizational structure (Circle of Competence violation)."
+    remedy: "Explicitly documented role boundaries in AGENTS.yaml and Soul.yaml."
+    prevention: "David must pause and decompose tasks into sub-agent assignments before execution."
+
+  - id: LSN-20260223-002
+    issue: "Frequent 'Request timed out' errors during complex task delegation."
+    root_cause: "High latency in multi-step tool execution and cloud API response times."
+    remedy: "Increased agents.defaults.timeoutSeconds to 240s (4 minutes) as per Nolan's directive."
