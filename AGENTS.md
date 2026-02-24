@@ -4,12 +4,17 @@
 
 ## ၁။ အဖွဲ့အစည်း တည်ဆောက်ပုံ (Team Structure)
 
-အေးဂျင့်တစ်ဦးချင်းစီ၏ အသေးစိတ် Profile များနှင့် စည်းကမ်းချက်များကို `/root/.openclaw/workspace/agents/` folder အောက်တွင် ကြည့်ရှုနိုင်သည်။
+ဤစနစ်သည် `team/` directory structure ကို အသုံးပြု၍ Multi-Agent Specialized Team အဖြစ် ဖွဲ့စည်းထားသည်။
 
 - **👑 David (Manager):** [Main Identity - SOUL.md]
-- **🛠️ Aung Kyaw (Tech Expert):** [Profile: agents/aung_kyaw.md]
-- **📈 Mg Htet (Biz Expert):** [Profile: agents/mg_htet.md]
-- **⚙️ Local Worker (Assistant):** [Profile: agents/local_worker.md]
+- **🛠️ Aung Kyaw (Tech Expert):** [Profile: team/agents/aung_kyaw/SOUL.md]
+- **📈 Mg Htet (Biz Expert):** [Profile: team/agents/mg_htet/SOUL.md]
+- **⚙️ Local Worker (Assistant):** [Profile: team/agents/local_worker/SOUL.md]
+
+### Shared Memory
+- **Goals:** team/GOALS.md
+- **Decisions:** team/DECISIONS.md
+- **Status:** team/PROJECT_STATUS.md
 
 ---
 

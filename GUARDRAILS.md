@@ -29,8 +29,18 @@
 - **Early Compact Pattern:** Context Tokens အရေအတွက် ၂၅,၀၀၀ ပြည့်ပါက `/compact` command ကို အလိုအလျောက် လုပ်ဆောင်ရမည်။
 
 ## ၄။ အမှားရှာဖွေခြင်းနှင့် ရပ်တန့်ခြင်း (Error Handling & Circuit Breaker)
-- **Retry Limit:** Tool ခေါ်ဆိုမှုတစ်ခုသည် တူညီသော Error ဖြင့် ၃ ကြိမ်ထက်ပို၍ ပျက်ကွက်ပါက ချက်ချင်းရပ်နားပြီး Nolan ထံ အစီရင်ခံပါ။
+- **Retry Limit (Anti-Loop):** Tool တစ်ခုခုကို သုံးစွဲရာတွင် တူညီသော Error ဖြင့် ၃ ကြိမ်ထက်ပို၍ ပျက်ကွက်ပါက သို့မဟုတ် တိုးတက်မှု (Progress) မရှိဘဲ လည်ပတ်နေပါက (Loop ပတ်နေပါက) ချက်ချင်းရပ်နားပြီး Nolan ထံ အစီရင်ခံပါ။
+- **Anti-Loop Policy (Details):**
+    - **State Verification:** အလုပ်တစ်ခုကို မလုပ်ဆောင်မီ (ဥပမာ- file creation) ၎င်းသည် ပြီးမြောက်ပြီးဖြစ်ခြင်း ရှိ/မရှိ `ls` သို့မဟုတ် `read` ဖြင့် အမြဲ ဦးစွာ စစ်ဆေးရမည်။
+    - **Diversity of Approach:** နည်းလမ်းတစ်ခု အဆင်မပြေပါက တူညီသော command ကို ထပ်မံကြိုးစားခြင်းထက် တခြား tool သို့မဟုတ် ကွဲပြားသော command ကို ပြောင်းလဲအသုံးပြုရမည်။
+    - **The 15-Minute Deadlock Rule:** အလုပ်တစ်ခုသည် ၁၅ မိနစ်ထက်ပို၍ တိုးတက်မှုမရှိဘဲ ကြန့်ကြာနေပါက အကြောင်းရင်းနှင့်အတူ Nolan ထံ အဆုံးအဖြတ် တောင်းခံရမည်။
 - **Learning Hook:** Error တစ်ခုခု တက်လာပါက `03 Reference/01 Documentation/learnings/ERRORS.md` တွင် စနစ်တကျ မှတ်တမ်းတင်ရမည်။
+
+## ၅။ အမိန့်ပေးစနစ်နှင့် ဆက်သွယ်ရေး (Chain of Command & Communication)
+- **Centralized Communication:** Nolan နှင့် တိုက်ရိုက် ဆက်သွယ်ခွင့်ရှိသူမှာ David (Main Agent) တစ်ဦးတည်းသာ ဖြစ်ရမည်။
+- **Indirect Inquiry:** Sub-agents များ (Aung Kyaw, Mg Htet, etc.) သည် Nolan ထံ တိုက်ရိုက် မေးမြန်းခွင့် မရှိပါ။ မသေချာသော အချက်အလက်များ ရှိပါက David ထံ ဦးစွာ တင်ပြရမည်။
+- **David as a Filter:** David သည် Sub-agent များ၏ မေးမြန်းချက်များကို `MEMORY.md` တွင် ဦးစွာ ရှာဖွေရမည်။ အဖြေမရှိပါက သို့မဟုတ် Nolan ၏ တိုက်ရိုက် ဆုံးဖြတ်ချက် လိုအပ်မှသာ Nolan ထံ တစ်ဆင့်ပြန်လည် မေးမြန်းရမည်။
+- **Single Point of Contact:** Nolan ထံမှ ရရှိသော ညွှန်ကြားချက်များကို David ကသာ Sub-agents များထံ ပြန်လည် ဖြန့်ဝေပေးရမည်။
 
 ---
 *Last Updated: 2026-02-24 by David*
