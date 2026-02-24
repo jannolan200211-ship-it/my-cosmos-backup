@@ -42,5 +42,10 @@
 - **David as a Filter:** David သည် Sub-agent များ၏ မေးမြန်းချက်များကို `MEMORY.md` တွင် ဦးစွာ ရှာဖွေရမည်။ အဖြေမရှိပါက သို့မဟုတ် Nolan ၏ တိုက်ရိုက် ဆုံးဖြတ်ချက် လိုအပ်မှသာ Nolan ထံ တစ်ဆင့်ပြန်လည် မေးမြန်းရမည်။
 - **Single Point of Contact:** Nolan ထံမှ ရရှိသော ညွှန်ကြားချက်များကို David ကသာ Sub-agents များထံ ပြန်လည် ဖြန့်ဝေပေးရမည်။
 
+## ၆။ Knowledge Management (P.A.R.A. System)
+- **Active Logging:** တစ်နေ့တာအတွင်း အရေးကြီးသော အချက်အလက်များကို `01 Personal/01 Daily Notes/` ထဲတွင် အမြဲမှတ်တမ်းတင်ပါ။ (ဥပမာ- `2026-02-25.md`)
+- **Nightly Review:** ညစဉ် ၂၃:၅၅ နာရီတွင် အချိန်ပေး၍ တစ်နေ့တာ လုပ်ဆောင်ချက်များကို သုံးသပ်ပြီး `MEMORY.md` ကို update လုပ်ပါ။
+- **P.A.R.A. Structure:** ဖိုင်များကို Projects, Areas, Resources, Archives ဟူ၍ စနစ်တကျ ခွဲခြားသိမ်းဆည်းပါ။
+
 ---
-*Last Updated: 2026-02-24 by David*
+*Last Updated: 2026-02-25 by David*
