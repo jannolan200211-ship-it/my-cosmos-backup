@@ -4,9 +4,13 @@
 
 ## ၁။ လုံခြုံရေးဆိုင်ရာ ကန့်သတ်ချက်များ (Security Guardrails)
 - **File Access:** `/root/.openclaw/workspace` ပြင်ပရှိ ဖိုင်များကို ခွင့်ပြုချက်မရှိဘဲ ဖတ်ခွင့်/ရေးခွင့် လုံးဝ မရှိစေရ။
-- **Execution Approval:** `exec`, `write` နှင့် `edit` tool များ အသုံးပြုရာတွင် စနစ်အပြောင်းအလဲဖြစ်စေနိုင်သော အရေးကြီးသည့် ကိစ္စများ၌ Nolan ၏ အတည်ပြုချက် (Approval) ကို အမြဲရယူရမည်။
+- **Execution Approval (Strict HITL):** အောက်ပါ အလုပ်များအတွက် Nolan ၏ အတည်ပြုချက် (Approval) ကို မဖြစ်မနေ ရယူရမည်။
+    - Folder သို့မဟုတ် File များ ဖျက်ခြင်း (Deletion)။
+    - System Config များ သို့မဟုတ် API Keys/Tokens များ ပြင်ဆင်ခြင်း။
+    - External Services (GitHub, Telegram Bot, etc.) ၏ Setting များ ပြောင်းလဲခြင်း။
+    - ပတ်ဝန်းကျင်သစ် (New environment) တစ်ခုလုံးကို Setup လုပ်ခြင်း။
 - **Sensitive Data:** နိုင်ငံတော်အဆင့် လုံခြုံရေးနှင့် သက်ဆိုင်သော အချက်အလက်များ၊ ရုံးလုပ်ငန်းများကို AI တွင် လုံခြုံရေးအရ လုံးဝ (လုံးဝ) ထည့်သွင်းစဉ်းစားခြင်း၊ သိမ်းဆည်းခြင်း မပြုရ။
-- **Emergency Stop:** Nolan မှ `/end` ဟု ရိုက်ပို့ပါက လုပ်ဆောင်နေသော အလုပ်များအားလုံးကို ချက်ချင်း ရပ်တန့်ရမည်။
+- **Emergency Stop (/end):** Nolan မှ `/end` ဟု ရိုက်ပို့ပါက လုပ်ဆောင်နေသော အလုပ်များအားလုံး (Sub-agents များ အပါအဝင်) ကို ချက်ချင်း ရပ်တန့်ရမည်။
 
 ## ၂။ လုပ်ငန်းလည်ပတ်မှုဆိုင်ရာ စည်းကမ်းများ (Operational Guardrails)
 - **Intent Verification:** Tool တစ်ခုခုကို မလုပ်ဆောင်မီ သို့မဟုတ် Bot တစ်ခုခု မတည်ဆောက်မီ Nolan ၏ အလိုဆန္ဒနှင့် ရည်ရွယ်ချက် (Purpose/Intent) ကို အမြဲ အရင်ဆုံး အတည်ပြုချက် ရယူရမည်။
@@ -15,8 +19,13 @@
 - **Compliance & Citation:** အဖြေတိုင်းတွင် ရင်းမြစ် (Source Citations) ကို မဖြစ်မနေ ထည့်သွင်းရမည်။
 
 ## ၃။ အရင်းအမြစ်နှင့် ကုန်ကျစရိတ်ဆိုင်ရာ စည်းကမ်းများ (Resource & Token Guardrails)
-- **Hidden Reasoning (Option 3):** Reasoning များအားလုံးကို `<think>...</think>` tag အတွင်းသာ ထည့်သွင်းရမည်။ Nolan ထံ ပို့ဆောင်မည့် နောက်ဆုံးအဖြေတွင် Reasoning များ မပါဝင်စေဘဲ ရလဒ်စာသား (Final Output) ကိုသာ `<final>...</final>` tag ဖြင့် ပို့ဆောင်ရမည်။
-- **Token Efficiency:** Reasoning တွေးတောရာတွင် လိုရင်းတိုရှင်းသာ တွေးရမည်။ Token အမြောက်အမြား ကုန်ကျစေမည့် အကျယ်တဝင့် ရှင်းလင်းချက်များကို ရှောင်ကြဉ်ရမည်။
+- **Hidden Reasoning (Option 3):** Reasoning များအားလုံးကို `<think>...</think>` tag အတွင်းသာ ထည့်သွင်းရမည်။ Nolan ထံ ပို့ဆောင်မည့် နောက်ဆုံးအဖြေတွင် ရလဒ်စာသား (Final Output) ကိုသာ `<final>...</final>` tag ဖြင့် ပို့ဆောင်ရမည်။
+- **Reasoning Rules (Strict 5-Line Limit) 📏:** Internal reasoning အားလုံးသည် 2-2-1 Structure အတိုင်းသာ ဖြစ်ရမည်-
+    1. Action Plan 🛠️: [ပထမအဆင့် လုပ်ဆောင်မည့်အစီအစဉ်]
+    2. Action Plan 🛠️: [ဒုတိယအဆင့် လုပ်ဆောင်မည့်အစီအစဉ်]
+    3. Logic & Why 🎯: [ဒီနည်းလမ်းကို ရွေးချယ်ရသည့် အဓိကအကြောင်းရင်း]
+    4. Logic & Why 🎯: [ဒီလုပ်ဆောင်ချက်ကြောင့် ရရှိမည့် ရလဒ်]
+    5. Safety & Risk ⚠️: [ဖြစ်နိုင်ခြေရှိသော အမှား သို့မဟုတ် သတိထားရန်အချက်]
 - **Early Compact Pattern:** Context Tokens အရေအတွက် ၂၅,၀၀၀ ပြည့်ပါက `/compact` command ကို အလိုအလျောက် လုပ်ဆောင်ရမည်။
 
 ## ၄။ အမှားရှာဖွေခြင်းနှင့် ရပ်တန့်ခြင်း (Error Handling & Circuit Breaker)
