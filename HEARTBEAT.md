@@ -1,8 +1,5 @@
-# HEARTBEAT.md - ပုံမှန် စစ်ဆေးမှုများ
+# HEARTBEAT.md
 
-# Heartbeat API ကို ကျော်ချင်ရင် ဒီဖိုင်ကို ဗလာအတိုင်း (သို့) မှတ်ချက် (Comment) တွေနဲ့ပဲ ထားပါ။
+# Keep this file empty (or with only comments) to skip heartbeat API calls.
 
-# အချိန်အပိုင်းအခြားအလိုက် တစ်ခုခု စစ်ဆေးစေချင်ရင် အောက်မှာ ရေးထည့်ပါ။
-
-- [ ] **ClawDeck Check:** `GET /tasks?assigned=true` ကို စစ်ဆေးပြီး Assigned task အသစ်ရှိပါက လုပ်ဆောင်ရန်။
-- [ ] **Nightly Review (23:55):** တစ်နေ့တာ ပြောဆိုချက်များကို ပြန်လည်သုံးသပ်ပြီး `MEMORY.md` နှင့် Daily Note ကို update လုပ်ရန်။
+# Add tasks below when you want the agent to check something periodically.

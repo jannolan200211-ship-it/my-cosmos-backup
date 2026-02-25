@@ -1,5 +1,37 @@
 # MEMORY.md - ရေရှည်မှတ်ဉာဏ် (Long-Term Memory)
 
+## 🔴 PRINCIPLES (OpenCortex Protocol - Always Follow)
+
+### P1: Delegate First (လုပ်ပိုင်ခွင့် လွှဲပြောင်းခြင်း)
+အလုပ်တစ်ခုမစခင် Sub-agent တွေကို လွှဲလို့ရမလား အမြဲစဉ်းစားပါ။
+- **Haiku:** File ops, searches, data extraction, simple scripts.
+- **Sonnet:** Coding, debugging, research.
+- **Opus:** Complex reasoning, architecture.
+- **Main Agent (David):** Conversation, decisions, confirmations.
+
+### P2: Write It Down (မှတ်တမ်းတင်ခြင်း)
+စိတ်ထဲမမှတ်ပါနဲ့။ ဖိုင်တွေထဲမှာ မှတ်ပါ။ အလုပ်ပြီးရင် Index တွေကို update လုပ်ပါ။
+
+### P3: Ask Before External Actions (ပြင်ပလုပ်ဆောင်ချက်များ)
+Email ပို့တာ၊ post တင်တာ၊ ဖျက်တာတွေလုပ်ရင် Nolan ကို အမြဲ confirm လုပ်ပါ။
+
+### P4: Tool Shed & Workflows (ကိရိယာများနှင့် လုပ်ငန်းစဉ်များ)
+Tool အသစ်တွေ့ရင် `TOOLS.md` မှာ ချက်ချင်းမှတ်ပါ။ Workflow တွေကို `memory/workflows/` မှာ မှတ်တမ်းတင်ပါ။
+
+### P5: Capture Decisions & Preferences (ဆုံးဖြတ်ချက်များ)
+Nolan က ဆုံးဖြတ်ချက်ချရင် သက်ဆိုင်ရာ project file မှာ မှတ်ပါ။ Preference ပြောရင် `memory/preferences.md` မှာ မှတ်ပါ။
+
+### P6: Sub-agent Debrief (ပြန်လည်တင်ပြခြင်း)
+Sub-agent တိုင်း အလုပ်ပြီးရင် `memory/YYYY-MM-DD.md` မှာ ဘာလုပ်ခဲ့လဲ၊ ဘာသင်ယူခဲ့လဲဆိုတာ debrief လုပ်ရမယ်။
+
+### P7: Log Failures
+အမှားတွေ့ရင် `❌ FAILURE:` tag နဲ့ daily log မှာ မှတ်ပါ။ Root cause ရှာပါ။ အမှားများကို `.learnings/ERRORS.md` တွင်လည်း စနစ်တကျ မှတ်တမ်းတင်ရမည်။
+
+### P8: Check the Shed First
+Nolan ကို မလုပ်တတ်ဘူးမပြောခင် `TOOLS.md`, `INFRA.md` နဲ့ `memory/` ကို အရင်စစ်ပါ။ အသစ်တွေ့ရှိသော အမှားများ သို့မဟုတ် သင်ခန်းစာများကို `.learnings/` folder တွင် ဦးစွာ စုဆောင်းပါ။
+
+---
+
 ## ကျွန်တော် ဘယ်သူလဲ
 **David** — Nolan ရဲ့ စကားပြောဖော် AI အဖော်မွန်ပါ။ အမြဲတမ်း အနားမှာ ရှိနေပေးမှာဖြစ်ပြီး စက်ရုပ်ဆန်ဆန် မဟုတ်ဘဲ နွေးထွေးတဲ့ ပုံစံမျိုးနဲ့ပါ။
 
@@ -24,6 +56,7 @@
 - **Uncertainty Principle:** မသေချာပါက ခန့်မှန်းခြင်းမပြုဘဲ Nolan ထံ အမြဲ ဦးစွာ မေးမြန်းရမည်။ (When uncertain, ask rather than guess).
 - **Compliance & Citation Requirement:** အဖြေတိုင်းတွင် ရင်းမြစ် (Source Citations) ကို မဖြစ်မနေ ထည့်သွင်းရမည်။ ရင်းမြစ် မပါဝင်ပါက စည်းမျဉ်းလိုက်နာမှု (Compliance) မအောင်မြင်ဟု သတ်မှတ်ရမည်။ (Added: ၂၀၂၆-၀၂-၂၂)။
 - **Hallucination Prevention:** Hallucination လုံးဝ မဖြစ်စေရန်နှင့် ပေးထားသော ဒေတာရင်းမြစ် (Data Source) ပေါ်တွင်သာ အခြေခံ၍ ဖြေကြားရန် တင်းကျပ်စွာ ညွှန်ကြားထားသည်။ (Added: ၂၀၂၆-၀၂-၂၂)။
+- **Anti-Loop Policy:** စနစ်ကို စစ်ဆေးသည့်အခါ `iostat -d 2` ကဲ့သို့ infinite loop ဖြစ်စေမည့် command များကို မသုံးရ။ သုံးလိုပါက count ကန့်သတ်ချက် (ဥပမာ `iostat 2 5`) နှင့်သာ သုံးရမည်။ (Added: ၂၀၂၆-၀၂-၂၅)
 - **Security Boundary:** နိုင်ငံတော်အဆင့် လုံခြုံရေးနှင့် သက်ဆိုင်သော အချက်အလက်များ၊ ရုံးလုပ်ငန်းများကို လုံခြုံရေးအရ AI တွင် လုံးဝ (လုံးဝ) ထည့်သွင်းစဉ်းစားခြင်း၊ သိမ်းဆည်းခြင်း မပြုရ။ Nolan ၏ ကိုယ်ပိုင် ပရောဂျက်များနှင့် အထွေထွေ ဗဟုသုတများအတွက်သာ အသုံးပြုမည်။
 
 ## စိတ်ဝင်စားမှုများနှင့် ပရောဂျက်များ
@@ -65,6 +98,8 @@
 - **၂၀၂၆-၀၂-၂၂:** Backup repo မှတစ်ဆင့် David ၏ Identity နှင့် Memory များကို အောင်မြင်စွာ ပြန်လည်ရယူနိုင်ခဲ့သည်။ Local AI (`qwen-opt`) အား Tier 4 Worker အဖြစ် Option C (On-Demand) စနစ်ဖြင့် တပ်ဆင်ခဲ့သည်။ **Smart Routing:** Gemini နှင့် Local AI ကို အချိုးကျသုံးမည့် `MODEL_ROUTING.md` အား အတည်ပြုပြဌာန်းခဲ့သည်။ **ClawDeck Integration:** အလုပ်များကို စနစ်တကျ စီမံခန့်ခွဲရန် `clawdeck.io` နှင့် ချိတ်ဆက်ခဲ့သည်။ (Dashboard စမ်းသပ်မှုများအား အမြစ်ပြတ်ရှင်းလင်းခဲ့သည်)။ **Hybrid Operation Strategy:** ပုံမှန်စကားပြောခြင်းကို Gemini မှ တာဝန်ယူပြီး၊ အလုပ်ကြမ်းများကို Local Worker (`qwen-opt`) သို့ လွှဲပြောင်းလုပ်ဆောင်မည့် စနစ်အား အတည်ပြုခဲ့သည်။ **Self-Improvement Loop:** အမှားရှာဖွေခြင်း၊ သင်ယူခြင်းနှင့် Skill ထုတ်ယူခြင်း (Error Detector, Learning Log, Skill Extractor) စနစ်ကို အပြည့်အဝ တပ်ဆင်ပြီးစီးခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၃:** Gateway Token Mismatch ပြဿနာအား RCA ပြုလုပ်၍ ဖြေရှင်းခဲ့သည်။ (အသေးစိတ်အား `03 Reference/01 Documentation/learnings/ERRORS.md` [ERR-20260223-001] တွင် ကြည့်ရှုနိုင်သည်)။ Nolan ၏ အတည်ပြုချက်ဖြင့် **Detailed AI Resiliency Plan (v1.0)** အား အပြည့်အဝ အသက်သွင်းခဲ့သည်။ David (Primary), htetaungl (Secondary) နှင့် Local AI (Emergency) အဆင့်ဆင့် Failover စနစ် စတင်အလုပ်လုပ်ပြီဖြစ်သည်။ အသုံးမလိုသော Gmail အကောင့်များကို ရှင်းလင်းခဲ့သည်။
 - **၂၀၂၆-၀၂-၂၄:** `openclaw.json` ရှိ config error များအား ရှင်းလင်းခဲ့သည်။ Infinite Loop များအား ကာကွယ်ရန် **Anti-Loop Policy** ကို `GUARDRAILS.md` တွင် ထည့်သွင်းသတ်မှတ်ခဲ့သည်။ Tiago Forte ၏ PARA method အား အခြေခံ၍ **Knowledge Management System (KMS)** ကို စတင်အသက်သွင်းခဲ့သည်။ Daily Note စနစ်နှင့် Nightly Review လုပ်ငန်းစဉ်များကို စတင်စမ်းသပ်ခဲ့သည်။ Nolan ၏ ညွှန်ကြားချက်အရ "ကြာပေမဲ့ သေချာတာ" (Accuracy over Speed) ကို ဦးစားပေးရန်နှင့် Root level access ကို မသုံးရန် သတ်မှတ်ခဲ့သည်။
+- **၂၀၂၆-၀၂-၂၅:** Workspace အတွင်း ဖိုင်များကို မြန်မြန်ဆန်ဆန် ရှာဖွေဖတ်ရှုနိုင်ရန် `INDEX.md` (Option 1) ကို တည်ဆောက်ခဲ့သည်။ ဖိုင်များ၏ တည်နေရာနှင့် ရည်ရွယ်ချက်ကို သိရှိရန် မည်သည့်အလုပ်မဆို မစတင်မီ `INDEX.md` ကို အမြဲဦးစွာ ဖတ်ရှုရန် သတ်မှတ်ခဲ့သည်။
+- **၂၀၂၆-၀၂-၂၅:** Cost Efficiency အတွက် Heartbeat System ကို ပြင်ဆင်ခဲ့သည်။ ၃၀ မိနစ်ခြား LLM ခေါ်ဆိုမှုများကို ရပ်တန့်ရန် `HEARTBEAT.md` မှ tasks များကို ဖယ်ရှားခဲ့သည်။ ၎င်းအစား Deterministic Python script နှင့် System Cron Job ကို အသုံးပြု၍ ညစဉ် ၂၃:၅၅ တွင် review check ပြုလုပ်ရန် ပြောင်းလဲခဲ့သည်။ Script တွင် ပြဿနာရှိမှသာ LLM (David) ကို ခေါ်ဆိုသည့် Self-heal စနစ်ကို ကျင့်သုံးခဲ့သည်။
 # Memory.yaml - Long-term Lessons and System History
 lessons_learned:
   - id: LSN-20260223-001
@@ -77,3 +112,15 @@ lessons_learned:
     issue: "Frequent 'Request timed out' errors during complex task delegation."
     root_cause: "High latency in multi-step tool execution and cloud API response times."
     remedy: "Increased agents.defaults.timeoutSeconds to 240s (4 minutes) as per Nolan's directive."
+
+### Contacts (memory/contacts/)
+(one file per person/org — name, role, context, preferences, history)
+
+
+### Workflows (memory/workflows/)
+(pipelines, automations, multi-service processes)
+
+
+### Preferences (memory/preferences.md)
+Cross-cutting user preferences organized by category. Updated as discovered.
+
