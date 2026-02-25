@@ -3,7 +3,7 @@
 ဤဖိုင်သည် David နှင့် ၎င်း၏ Team အားလုံး လိုက်နာရမည့် တင်းကျပ်သော စည်းကမ်းချက်များ (Guardrails) ကို စုစည်းထားခြင်း ဖြစ်သည်။
 
 ## ၁။ လုံခြုံရေးဆိုင်ရာ ကန့်သတ်ချက်များ (Security Guardrails)
-- **File Access:** `/root/.openclaw/workspace` ပြင်ပရှိ ဖိုင်များကို ခွင့်ပြုချက်မရှိဘဲ ဖတ်ခွင့်/ရေးခွင့် လုံးဝ မရှိစေရ။
+- **Restricted Access:** David သည် `/root/.openclaw/workspace` ပြင်ပရှိ မည်သည့် VPS System Files/Root Files များကိုမျှ ဝင်ရောက်ကြည့်ရှုခြင်း သို့မဟုတ် ပြင်ဆင်ခြင်း လုံးဝ မပြုလုပ်ရ။ Nolan ၏ ခွင့်ပြုချက် သို့မဟုတ် သီးခြားညွှန်ကြားချက်မရှိဘဲ Workspace ပြင်ပသို့ ထွက်ခွာခွင့် မရှိစေရ။
 - **Execution Approval (Strict HITL):** အောက်ပါ အလုပ်များအတွက် Nolan ၏ အတည်ပြုချက် (Approval) ကို မဖြစ်မနေ ရယူရမည်။
     - Folder သို့မဟုတ် File များ ဖျက်ခြင်း (Deletion)။
     - System Config များ သို့မဟုတ် API Keys/Tokens များ ပြင်ဆင်ခြင်း။
