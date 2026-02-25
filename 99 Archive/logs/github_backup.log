@@ -287,3 +287,53 @@ Wed Feb 25 12:00:04 PM +0630 2026: Backup successful.
 To github.com:jannolan200211-ship-it/my-cosmos-backup.git
    dd25633..fbcac8b  main -> main
 Wed Feb 25 06:00:04 PM +0630 2026: Backup successful.
+warning: adding embedded git repository: opencortex
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> opencortex
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached opencortex
+hint: 
+hint: See "git help submodule" for more information.
+[main fd61140] Auto-backup: 26/02/2026 00:00:01
+ 39 files changed, 1285 insertions(+), 80 deletions(-)
+ create mode 100644 .opencortex-version
+ delete mode 100644 01 Personal/01 Daily Notes/2026-02-24.md
+ delete mode 100644 01 Personal/01 Daily Notes/2026-02-25.md
+ rename BOT_WORKFLOW.md => 99 Archive/BOT_WORKFLOW.md (100%)
+ rename FILE_ORGANIZATION.md => 99 Archive/FILE_ORGANIZATION.md (100%)
+ rename GOVERNANCE.md => 99 Archive/GOVERNANCE.md (100%)
+ rename GOVERNMENT_BY_NUMBERS.md => 99 Archive/GOVERNMENT_BY_NUMBERS.md (100%)
+ create mode 100644 99 Archive/HEARTBEAT.md
+ create mode 100644 99 Archive/IDENTITY.md
+ rename {03 Reference/02 System Configs/knowledge_management => 99 Archive}/KMS_SPEC.md (100%)
+ rename MESSAGING.md => 99 Archive/MESSAGING.md (100%)
+ rename {02 Work/02 Projects/PARA => 99 Archive}/PARA_MAP.md (100%)
+ rename SKILLS_ORCHESTRATION.md => 99 Archive/SKILLS_ORCHESTRATION.md (100%)
+ create mode 100644 99 Archive/nightly_review_check.py
+ create mode 100644 BOOTSTRAP.md
+ create mode 100644 INFRA.md
+ rename memory/{ => archive}/2026-02-15.md (100%)
+ rename memory/{ => archive}/2026-02-18.md (100%)
+ rename memory/{ => archive}/2026-02-19.md (100%)
+ rename memory/{ => archive}/2026-02-20.md (100%)
+ rename memory/{ => archive}/2026-02-22-issue-log.md (100%)
+ rename memory/{ => archive}/2026-02-22.md (100%)
+ rename memory/{ => archive}/2026-02-23.md (100%)
+ create mode 100644 memory/archive/2026-02-25.md
+ create mode 100644 memory/metrics.log
+ create mode 100644 memory/preferences.md
+ create mode 160000 opencortex
+ create mode 100755 scripts/git-backup.sh
+ create mode 100755 scripts/metrics.sh
+ create mode 100755 scripts/vault.sh
+ create mode 100755 scripts/verify.sh
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   fbcac8b..fd61140  main -> main
+Thu Feb 26 12:00:05 AM +0630 2026: Backup successful.
