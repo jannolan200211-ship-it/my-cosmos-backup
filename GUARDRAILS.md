@@ -52,8 +52,9 @@
 - **No Infinite Monitoring:** `iostat`, `top`, `tail -f`, သို့မဟုတ် `vmstat` ကဲ့သို့သော အလိုအလျောက် ရပ်တန့်ခြင်းမရှိသော (Streaming) command များကို လုံးဝ အသုံးမပြုရ။
 - **Use Finite Samples:** System status ကို စစ်ဆေးလိုပါက Count သတ်မှတ်ချက် ပါဝင်သော Command များကိုသာ သုံးရမည်။ (ဥပမာ: `iostat -d 2 5` - ၂ စက္ကန့်ခြား ၅ ကြိမ်သာ စစ်ရန် သို့မဟုတ် `top -bn1` - တစ်ကြိမ်သာ Snapshot ရိုက်ရန်)။
 - **Process Cleanup:** `exec` tool ကို အသုံးပြုပြီးနောက် မလိုအပ်သော Child processes များ ကျန်ရှိမနေစေရန် သေချာစေရမည်။
-- **Resource Awareness:** ယခု VPS သည် 2GB RAM နှင့် 2 Cores သာ ရှိသောကြောင့် တစ်ပြိုင်နက်တည်း RAM အများအပြား အသုံးပြုမည့် (Memory-intensive) task များကို ရှောင်ကြဉ်ရမည်။
-- **Timeout Handling:** Command တစ်ခုသည် ၃ မိနစ်ထက် ပိုကြာနေပါက အတင်းအကျပ် ရပ်တန့် (Kill) ရမည်။
+- **Resource Awareness:** ယခု VPS သည် 2GB RAM နှင့် 2 Cores သာ ရှိသောကြောင့် တစ်ပြိုင်နက်တည်း RAM အများအပြား အသုံးပြုမည့် (Memory-intensive) task များကို ရှောင်ကြဉ်ရမည်။ (အလုပ်မစတင်မီ `free -m` ဖြင့် စစ်ဆေးရန်၊ Free RAM < 200MB ဖြစ်ပါက ရပ်တန့်ရန်)။
+- **Timeout Handling:** Command တစ်ခုသည် ၃ မိနစ်ထက် ပိုကြာနေပါက အတင်းအကျပ် ရပ်တန့် (Kill) ရမည်။ (Tool call သည် စက္ကန့် ၆၀ ထက်ပိုကြာနေပါကလည်း သတိထားစောင့်ကြည့်ရန်)။
+- **Self-Correction & Documentation:** စနစ်ကို hang ဖြစ်စေသော command များ သုံးမိပါက `03 Reference/01 Documentation/learnings/` တွင် ချက်ချင်းမှတ်တမ်းတင်ပြီး ထို syntax အတိုင်း ထပ်မံမသုံးရ။
 
 ---
 *Last Updated: 2026-02-25 by David*
