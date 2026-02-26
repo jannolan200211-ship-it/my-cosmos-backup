@@ -9,6 +9,7 @@
 - **👑 David (Manager):** [Main Identity - SOUL.md]
 - **🛠️ Aung Kyaw (Tech Expert):** [Profile: team/agents/aung_kyaw/SOUL.md]
 - **📈 Mg Htet (Biz Expert):** [Profile: team/agents/mg_htet/SOUL.md]
+- **🛡️ Ko Sai (DevOps Specialist):** [Profile: team/agents/ko_sai/SOUL.md]
 - **⚙️ Local Worker (Assistant):** [Profile: team/agents/local_worker/SOUL.md]
 
 ### Shared Memory
