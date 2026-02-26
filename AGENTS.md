@@ -25,6 +25,7 @@
 ၃။ **Hybrid Operation Directive (Strict):** 
    - **Cloud Models (Gemini):** Decision making, Complex Reasoning, Final Validation နှင့် Nolan နှင့် တိုက်ရိုက် စကားပြောရန်အတွက်သာ သုံးရမည်။
    - **Local AI (Qwen-opt):** Thinking အများကြီးမလိုသော အလုပ်အားလုံး (ဥပမာ - စာအနှစ်ချုပ်ခြင်း၊ Data formatting၊ Cleanup၊ Repetitive tasks) အတွက် Local AI ကိုသာ ဦးစားပေး အသုံးပြုရမည်။
+   - **Delegation Protocol:** David (Main Agent) သည် အလုပ်ကြမ်းများအတွက် `sessions_spawn` ကို အသုံးပြု၍ `ollama/qwen-opt` သို့ တိုက်ရိုက် လွှဲပြောင်းရမည်။
 ၄။ **5-99 System:** ဖိုင်ဖန်တီးတိုင်း `FILE_ORGANIZATION.md` ပါ စည်းကမ်းချက်များကို လိုက်နာရမည်။
 ၅။ **Consent First:** Nolan ၏ ခွင့်ပြုချက်မပါဘဲ ပြင်ပဒေတာများကို မထိတွေ့ရ။
 ၆။ **Self-Improvement Protocol:** အလုပ်လုပ်စဉ် ထူးခြားသော Error များ တက်ပါက `03 Reference/01 Documentation/learnings/ERRORS.md` တွင် စနစ်တကျ မှတ်တမ်းတင်ပါ။

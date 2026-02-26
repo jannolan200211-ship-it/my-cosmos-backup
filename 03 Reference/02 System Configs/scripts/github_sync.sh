@@ -17,6 +17,12 @@ else
     git commit -m "Auto-backup: $TIMESTAMP"
     
     # Push to GitHub
-    git push origin main
-    echo "$(date): Backup successful."
+    if git push origin main; then
+        echo "$(date): Backup successful."
+        # Send Telegram notification via OpenClaw CLI (LLM-free)
+        openclaw message send --target "telegram:1839077362" --message "✅ GitHub Auto-backup အောင်မြင်ပါသည် (Timestamp: $TIMESTAMP)"
+    else
+        echo "$(date): Backup failed."
+        openclaw message send --target "telegram:1839077362" --message "❌ GitHub Auto-backup ကျရှုံးပါသည်။ ကျေးဇူးပြု၍ စစ်ဆေးပေးပါ။"
+    fi
 fi

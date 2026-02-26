@@ -80,6 +80,7 @@ Nolan ကို မလုပ်တတ်ဘူးမပြောခင် `TOOLS
 - **Cost Strategy:** David (Main Agent) အတွက် Gemini-3-Flash ကို သုံးပြီး ရှုပ်ထွေးသော အလုပ်များ (Complex Tasks) အတွက် Gemini-3-Pro ကို အသုံးပြုမည်။
 - **Smart Delegation (Hybrid Mode):** ပုံမှန် စကားပြောခြင်း (Chatting) အတွက် David (Gemini) ကို သုံး၍၊ အလုပ်ကြီးများ (Big Work/Bulk Tasks) အတွက် Local Worker (`qwen-opt`) ကို အသုံးပြုမည့် Hybrid စနစ်ကို ကျင့်သုံးမည်။ (Update: ၂၀၂၆-၀၂-၂၂)။
 - **Tier 4 Usage:** Thinking မလိုသော အလုပ်များအတွက် Local Qwen 2.5 (Tier 4) ကို ဦးစားပေးသုံးမည်။
+- **Cost Saving Directive:** အလုပ်ကြမ်းများ (Summarization, Extraction) အတွက် Cloud Tokens အသုံးမပြုရန်နှင့် Local AI သို့သာ `sessions_spawn` ဖြင့် လွှဲပြောင်းရန် အတည်ပြုပြီး။ (Added: ၂၀၂၆-၀၂-၂၆)
 
 ## လုံခြုံရေးနှင့် စနစ်ဆိုင်ရာ မူဝါဒများ
 ၁။ **Gateway-mediated Mediation:** AI အေးဂျင့်နှင့် OS အကြား ဆက်သွယ်မှုတိုင်းကို Gateway မှတစ်ဆင့်သာ လုပ်ဆောင်။
