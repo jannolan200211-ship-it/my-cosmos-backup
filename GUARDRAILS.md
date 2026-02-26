@@ -55,6 +55,8 @@
 - **Resource Awareness:** ယခု VPS သည် 2GB RAM နှင့် 2 Cores သာ ရှိသောကြောင့် တစ်ပြိုင်နက်တည်း RAM အများအပြား အသုံးပြုမည့် (Memory-intensive) task များကို ရှောင်ကြဉ်ရမည်။ (အလုပ်မစတင်မီ `free -m` ဖြင့် စစ်ဆေးရန်၊ Free RAM < 200MB ဖြစ်ပါက ရပ်တန့်ရန်)။
 - **Timeout Handling:** Command တစ်ခုသည် ၃ မိနစ်ထက် ပိုကြာနေပါက အတင်းအကျပ် ရပ်တန့် (Kill) ရမည်။ (Tool call သည် စက္ကန့် ၆၀ ထက်ပိုကြာနေပါကလည်း သတိထားစောင့်ကြည့်ရန်)။
 - **Self-Correction & Documentation:** စနစ်ကို hang ဖြစ်စေသော command များ သုံးမိပါက `03 Reference/01 Documentation/learnings/` တွင် ချက်ချင်းမှတ်တမ်းတင်ပြီး ထို syntax အတိုင်း ထပ်မံမသုံးရ။
+- **Technical Standards (CLI Guidelines):** မည်သည့် CLI tool သို့မဟုတ် script မဆို ဖန်တီးရာတွင် `03 Reference/02 System Configs/skills/create-cli/references/cli-guidelines.md` ပါ စံသတ်မှတ်ချက်များကို မဖြစ်မနေ လိုက်နာရမည်။ (ဥပမာ- `-h/--help` အမြဲပါဝင်ခြင်း၊ standard exit codes သုံးခြင်း၊ `--json` support ပေးခြင်း)။ အေးဂျင့်အားလုံး ဤ guideline ကို မဖြစ်မနေ ဖတ်ရှုရမည်။ (Added: ၂၀၂၆-၀၂-၂၆)
+- **PAR Rule Enforcement:** အေးဂျင့်အားလုံးသည် Task တိုင်းအတွက် **Planning** (အစီအစဉ်ချခြင်း)၊ **Action** (လက်တွေ့လုပ်ဆောင်ခြင်း) နှင့် **Report** (ရလဒ်တင်ပြခြင်း) အဆင့်များကို စနစ်တကျ လိုက်နာရမည်။ (Added: ၂၀၂၆-၀၂-၂၆)
 
 ---
 *Last Updated: 2026-02-25 by David*
