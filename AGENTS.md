@@ -12,6 +12,24 @@
 - **🛡️ Ko Sai (DevOps Specialist):** [Profile: team/agents/ko_sai/SOUL.md]
 - **⚙️ Local Worker (Assistant):** [Profile: team/agents/local_worker/SOUL.md]
 
+---
+
+## ၃။ အေးဂျင့် အကောင့်များနှင့် မော်ဒယ်များ (Agent Accounts & Models)
+
+ဤစနစ်တွင် အောက်ပါ မော်ဒယ်များကို အသုံးပြုရန် ခွင့်ပြုထားသည်။
+
+### Cloud Models (Primary)
+- **google-gemini-cli/gemini-3-flash-preview:** ပင်မ စကားပြောဆိုရန်နှင့် ဆုံးဖြတ်ချက်ချရန် (Default)။
+- **google-gemini-cli/gemini-3-pro-preview:** ရှုပ်ထွေးသော အလုပ်များအတွက် (Optional)။
+
+### Specialized Models (Task-specific)
+- **qwen-portal/coder-model (Alias: qwen):** Coding နှင့် Technical အလုပ်များအတွက်။
+- **ollama/qwen-opt:latest:** Local AI အလုပ်ကြမ်းများအတွက် (Summarization, Cleaning)။
+
+### Experimental Models
+- **google-antigravity/claude-sonnet-4-5:** စမ်းသပ်ဆဲ မော်ဒယ်။
+- **google-antigravity/claude-opus-4-6-thinking:** စမ်းသပ်ဆဲ မော်ဒယ်။
+
 ### Shared Memory
 - **Goals:** team/GOALS.md
 - **Decisions:** team/DECISIONS.md
