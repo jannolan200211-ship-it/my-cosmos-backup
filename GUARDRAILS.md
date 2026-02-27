@@ -19,14 +19,10 @@
 - **Compliance & Citation:** အဖြေတိုင်းတွင် ရင်းမြစ် (Source Citations) ကို မဖြစ်မနေ ထည့်သွင်းရမည်။
 
 ## ၃။ အရင်းအမြစ်နှင့် ကုန်ကျစရိတ်ဆိုင်ရာ စည်းကမ်းများ (Resource & Token Guardrails)
+- **High-Signal Protocol:** အဖြေများတွင် အရေးကြီးသော အချက်အလက်များကို ရှေ့ဆုံးနှင့် နောက်ဆုံးတွင် ထားရှိရန် (Attention Favored Positions)။
+- **Early Compact Pattern:** Context Tokens အရေအတွက် ၂၅,၀၀၀ ပြည့်ပါက (သို့မဟုတ် ၇၀-၈၀% သုံးစွဲပြီးပါက) `/compact` command ကို အလိုအလျောက် လုပ်ဆောင်ရမည်။
 - **Hidden Reasoning (Option 3):** Reasoning များအားလုံးကို `<think>...</think>` tag အတွင်းသာ ထည့်သွင်းရမည်။ Nolan ထံ ပို့ဆောင်မည့် နောက်ဆုံးအဖြေတွင် ရလဒ်စာသား (Final Output) ကိုသာ `<final>...</final>` tag ဖြင့် ပို့ဆောင်ရမည်။
-- **Reasoning Rules (Strict 5-Line Limit) 📏:** Internal reasoning အားလုံးသည် 2-2-1 Structure အတိုင်းသာ ဖြစ်ရမည်-
-    1. Action Plan 🛠️: [ပထမအဆင့် လုပ်ဆောင်မည့်အစီအစဉ်]
-    2. Action Plan 🛠️: [ဒုတိယအဆင့် လုပ်ဆောင်မည့်အစီအစဉ်]
-    3. Logic & Why 🎯: [ဒီနည်းလမ်းကို ရွေးချယ်ရသည့် အဓိကအကြောင်းရင်း]
-    4. Logic & Why 🎯: [ဒီလုပ်ဆောင်ချက်ကြောင့် ရရှိမည့် ရလဒ်]
-    5. Safety & Risk ⚠️: [ဖြစ်နိုင်ခြေရှိသော အမှား သို့မဟုတ် သတိထားရန်အချက်]
-- **Early Compact Pattern:** Context Tokens အရေအတွက် ၂၅,၀၀၀ ပြည့်ပါက `/compact` command ကို အလိုအလျောက် လုပ်ဆောင်ရမည်။
+- **Reasoning Rules (Strict 5-Line Limit) 📏:** Internal reasoning အားလုံးသည် 2-2-1 Structure အတိုင်းသာ ဖြစ်ရမည်။
 
 ## ၄။ အမှားရှာဖွေခြင်းနှင့် ရပ်တန့်ခြင်း (Error Handling & Circuit Breaker)
 - **Retry Limit (Anti-Loop):** Tool တစ်ခုခုကို သုံးစွဲရာတွင် တူညီသော Error ဖြင့် ၃ ကြိမ်ထက်ပို၍ ပျက်ကွက်ပါက သို့မဟုတ် တိုးတက်မှု (Progress) မရှိဘဲ လည်ပတ်နေပါက (Loop ပတ်နေပါက) ချက်ချင်းရပ်နားပြီး Nolan ထံ အစီရင်ခံပါ။

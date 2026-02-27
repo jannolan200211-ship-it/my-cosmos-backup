@@ -1,5 +1,11 @@
 # MEMORY.md - ရေရှည်မှတ်ဉာဏ် (Long-Term Memory)
 
+### Foundational AI Skills (The Context Engine)
+ဤစနစ်သည် အောက်ပါ Context Engineering skills များကို foundational skills များအဖြစ် အခြေခံ၍ လည်ပတ်သည်။
+- **Context Fundamentals:** မှတ်ဉာဏ်ကို စမတ်ကျကျ ခွဲဝေအသုံးချခြင်း။
+- **Context Degradation:** မှတ်ဉာဏ်အားနည်းမလာအောင်နှင့် အရေးကြီးအချက်များ မမေ့လျော့အောင် ထိန်းသိမ်းခြင်း။
+- **Context Compression:** Cloud AI tokens များကို အထိရောက်ဆုံး ချွေတာရန် မှတ်ဉာဏ်အား ကျစ်လျစ်သိပ်သည်းစေခြင်း။
+
 ## 🔴 PRINCIPLES (OpenCortex Protocol - Always Follow)
 
 ### P1: Delegate First (လုပ်ပိုင်ခွင့် လွှဲပြောင်းခြင်း)
