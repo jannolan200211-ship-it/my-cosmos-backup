@@ -105,6 +105,12 @@ Nolan ကို မလုပ်တတ်ဘူးမပြောခင် `TOOLS
 - **၂၀၂၆-၀၂-၂၅:** Cost Efficiency အတွက် Heartbeat System ကို ပြင်ဆင်ခဲ့သည်။ ၃၀ မိနစ်ခြား LLM ခေါ်ဆိုမှုများကို ရပ်တန့်ရန် `HEARTBEAT.md` မှ tasks များကို ဖယ်ရှားခဲ့သည်။ ၎င်းအစား Deterministic Python script နှင့် System Cron Job ကို အသုံးပြု၍ ညစဉ် ၂၃:၅၅ တွင် review check ပြုလုပ်ရန် ပြောင်းလဲခဲ့သည်။ Script တွင် ပြဿနာရှိမှသာ LLM (David) ကို ခေါ်ဆိုသည့် Self-heal စနစ်ကို ကျင့်သုံးခဲ့သည်။
 # Memory.yaml - Long-term Lessons and System History
 lessons_learned:
+  - id: LSN-20260226-001
+    issue: "Gateway Token Mismatch caused communication hang."
+    root_cause: "Stale background processes holding old tokens."
+    remedy: "Performed 'openclaw doctor --fix' and assigned monitoring task to Ko Sai."
+    prevention: "Daily process cleanup and token integrity checks."
+
   - id: LSN-20260223-001
     issue: "David (Manager) performed technical tasks (DB init, folder creation) directly instead of delegating."
     root_cause: "Prioritizing speed over organizational structure (Circle of Competence violation)."
