@@ -23,8 +23,9 @@
 - **google-gemini-cli/gemini-3-pro-preview:** ရှုပ်ထွေးသော အလုပ်များအတွက် (Optional)။
 
 ### Specialized Models (Task-specific)
-- **qwen-portal/coder-model (Alias: qwen):** Coding နှင့် Technical အလုပ်များအတွက်။
-- **ollama/qwen-opt:latest:** Local AI အလုပ်ကြမ်းများအတွက် (Summarization, Cleaning)။
+- **google-gemini-cli/gemini-3-flash-preview:** Primary decision maker.
+- **ollama/qwen-opt:latest (Alias: local-qwen, qwen-opt):** Local AI for summarization, cleaning, and repetitive tasks. **MANDATORY:** Use this for all `sessions_spawn` distillation or bulk processing to save cloud tokens.
+- **qwen-portal/coder-model (Alias: qwen):** Currently unavailable (401 error). Use Gemini or local-qwen instead.
 
 ### Experimental Models
 - **google-antigravity/claude-sonnet-4-5:** စမ်းသပ်ဆဲ မော်ဒယ်။

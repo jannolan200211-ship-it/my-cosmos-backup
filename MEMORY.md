@@ -81,6 +81,10 @@ Nolan ကို မလုပ်တတ်ဘူးမပြောခင် `TOOLS
 
 ## အခြေခံ အဆောက်အအုံ
 - **VPS IP:** 163.44.196.160
+- **Model Alias (Local AI):** 
+  - `ollama/qwen-opt:latest` (Alias: `local-qwen`, `qwen-opt`)
+  - Cloud token သက်သာရန် Distillation အလုပ်များအတွက် ဤ model ကိုသာ အမြဲသုံးရမည်။
+- **External API:** `qwen-portal/coder-model` (Alias: `qwen`) သည် token expired ဖြစ်နေသဖြင့် အသုံးမပြုရန်။
 - **Operational Architecture:** Trigger -> Route -> Run -> Threshold Check -> Compact/Flush.
 - **Model Strategy:** Gemini-3-Flash ကို ပင်မအင်ဂျင် (Primary Engine) အဖြစ် အသုံးပြုပြီး၊ Local AI (Tier 4 - Qwen-opt) ကို အရန်အင်ဂျင် (Backup/Secondary Engine) အဖြစ် သတ်မှတ်ထားသည်။ (Update: ၂၀၂၆-၀၂-၂၃)။
 - **Cost Strategy:** David (Main Agent) အတွက် Gemini-3-Flash ကို သုံးပြီး ရှုပ်ထွေးသော အလုပ်များ (Complex Tasks) အတွက် Gemini-3-Pro ကို အသုံးပြုမည်။
