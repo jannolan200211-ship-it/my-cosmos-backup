@@ -21,9 +21,10 @@ Skills တွေက ကိရိယာတွေ *ဘယ်လို* အလု�
 - living-room → အိမ်ရှေ့ခန်း, 180° မြင်ကွင်းကျယ်
 - front-door → ဝင်ပေါက်, လှုပ်ရှားမှုရှိမှ ရိုက်ကူးမည်
 
-### SSH
-
-- home-server → 192.168.1.100, user: admin
+### Notion Integration
+- **Status:** Connected (API Key stored in vault)
+- **Tool:** Notion API / MCP Notion
+- **Capability:** Reading/Writing to databases, pages, and task management within Nolan's Notion workspace.
 
 ### TTS
 

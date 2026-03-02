@@ -1,0 +1,253 @@
+Success: get-workflow completed.
+{
+  "updatedAt": "2026-03-01T04:07:58.350Z",
+  "createdAt": "2026-02-28T13:31:55.453Z",
+  "id": "Ees5kEdheiIckOUy",
+  "name": "Memory Distillation System",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "When clicking \"Execute Workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        112,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -96,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "list"
+      },
+      "id": "list-files",
+      "name": "List Files",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        304,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.extension }}",
+              "value2": "md"
+            }
+          ],
+          "boolean": [
+            {
+              "value1": "={{ !$json.name.includes(\"archive\") }}"
+            }
+          ]
+        }
+      },
+      "id": "filter-md",
+      "name": "Filter MD Files",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        512,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return $input.all().sort((a, b) => a.json.name.localeCompare(b.json.name));"
+      },
+      "id": "sort-by-date",
+      "name": "Sort by Date",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [
+        704,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "fileSelector": "={{ $json.path }}",
+        "options": {}
+      },
+      "id": "read-content",
+      "name": "Read File Content",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        912,
+        240
+      ],
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {},
+      "id": "ai-distiller-new",
+      "name": "AI Distiller",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.4,
+      "position": [
+        1152,
+        224
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        1152,
+        448
+      ],
+      "id": "8b360042-b4e1-4357-9e57-82dbb4ce79f1",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "YbI3lvxKfM4sMdEo",
+          "name": "Groq account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "When clicking \"Execute Workflow\"",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking \"Execute Workflow\"": {
+      "main": [
+        [
+          {
+            "node": "List Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List Files": {
+      "main": [
+        [
+          {
+            "node": "Filter MD Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter MD Files": {
+      "true": [
+        [
+          {
+            "node": "Sort by Date",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sort by Date": {
+      "main": [
+        [
+          {
+            "node": "Read File Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read File Content": {
+      "main": [
+        [
+          {
+            "node": "AI Distiller",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Distiller",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "4b5e5999-9d72-49d0-9064-4fdad2452b15",
+  "activeVersionId": null,
+  "versionCounter": 32,
+  "triggerCount": 0,
+  "shared": [
+    {
+      "updatedAt": "2026-02-28T13:31:55.472Z",
+      "createdAt": "2026-02-28T13:31:55.472Z",
+      "role": "workflow:owner",
+      "workflowId": "Ees5kEdheiIckOUy",
+      "projectId": "pwccK6kEtITneQhL",
+      "project": {
+        "updatedAt": "2026-03-01T03:17:10.352Z",
+        "createdAt": "2026-02-28T11:34:04.944Z",
+        "id": "pwccK6kEtITneQhL",
+        "name": "Jan Nolan <jannolan200211@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "72eb857b-957e-4510-aae5-7bea4c7b5305"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": null
+}

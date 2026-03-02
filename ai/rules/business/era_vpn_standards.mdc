@@ -1,0 +1,17 @@
+# Era VPN Business Standards
+
+ဤစည်းကမ်းချက်များကို Business Agent (Mg Htet) နှင့် အခြားအေးဂျင့်များ Era VPN နှင့် ပတ်သက်သော အလုပ်များလုပ်ဆောင်ရာတွင် လိုက်နာရမည်။
+
+## ၁။ အဓိက အရင်းအမြစ်များ (Knowledge Sources)
+- Master Strategy: `team/agents/mg_htet/business_logic/era_vpn_master_strategy.json`
+- Marketing Playbook: `team/agents/mg_htet/business_logic/era_vpn_marketing_sales_playbook.json`
+- KPI Dashboard System: `team/agents/mg_htet/business_logic/era_vpn_kpi_dashboard_system.json`
+
+## ၂။ လုပ်ဆောင်ချက် မူဝါဒများ
+- မည်သည့် Marketing campaign မဆို Playbook ပါ အချက်အလက်များနှင့် ကိုက်ညီရမည်။
+- အရောင်းအချက်အလက်များကို KPI Dashboard စနစ်အတိုင်း မှတ်တမ်းတင်ရမည်။
+- ဆုံးဖြတ်ချက်တိုင်းသည် Master Strategy ပါ ရေရှည်ရည်မှန်းချက်များနှင့် ကိုက်ညီမှုရှိမရှိ အမြဲစစ်ဆေးရမည်။
+
+## ၃။ အေးဂျင့်များ၏ တာဝန်
+- **Mg Htet:** ဤ Logic များကို အသုံးပြု၍ Strategy ချမှတ်ခြင်းနှင့် အရောင်းပိုင်းကို တာဝန်ယူရန်။
+- **David:** အလုပ်များ စနစ်တကျ ဖြစ်စေရန် ဤ Standards များနှင့် အညီ Orchestrate လုပ်ရန်။

@@ -1,0 +1,55 @@
+# OpenClaw System Skills List
+
+| Status | Skill Name | Description | Source |
+| :--- | :--- | :--- | :--- |
+| ❌ Missing | **1password** | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. | openclaw-bundled |
+| ❌ Missing | **apple-notes** | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders. | openclaw-bundled |
+| ❌ Missing | **apple-reminders** | Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. | openclaw-bundled |
+| ❌ Missing | **bear-notes** | Create, search, and manage Bear notes via grizzly CLI. | openclaw-bundled |
+| ❌ Missing | **blogwatcher** | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. | openclaw-bundled |
+| ❌ Missing | **blucli** | BluOS CLI (blu) for discovery, playback, grouping, and volume. | openclaw-bundled |
+| ❌ Missing | **bluebubbles** | Use when you need to send or manage iMessages via BlueBubbles (recommended iMessage integration). Calls go through the generic message tool with channel="bluebubbles". | openclaw-bundled |
+| ❌ Missing | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. | openclaw-bundled |
+| ✅ Ready | **clawhub** | Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI. | openclaw-bundled |
+| ❌ Missing | **coding-agent** | Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:"acp"), or any work in ~/clawd workspace (never spawn agents here). Requires a bash tool that supports pty:true. | openclaw-bundled |
+| ❌ Missing | **discord** | Discord ops via the message tool (channel=discord). | openclaw-bundled |
+| ❌ Missing | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). | openclaw-bundled |
+| ✅ Ready | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. | openclaw-bundled |
+| ✅ Ready | **gh-issues** | Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352] | openclaw-bundled |
+| ❌ Missing | **gifgrep** | Search GIF providers with CLI/TUI, download results, and extract stills/sheets. | openclaw-bundled |
+| ✅ Ready | **github** | GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured. | openclaw-bundled |
+| ✅ Ready | **gog** | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. | openclaw-bundled |
+| ❌ Missing | **goplaces** | Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts. | openclaw-bundled |
+| ✅ Ready | **healthcheck** | Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS). | openclaw-bundled |
+| ❌ Missing | **himalaya** | CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language). | openclaw-bundled |
+| ❌ Missing | **imsg** | iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app. | openclaw-bundled |
+| ✅ Ready | **mcporter** | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. | openclaw-bundled |
+| ❌ Missing | **model-usage** | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. | openclaw-bundled |
+| ❌ Missing | **nano-banana-pro** | Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). | openclaw-bundled |
+| ❌ Missing | **nano-pdf** | Edit PDFs with natural-language instructions using the nano-pdf CLI. | openclaw-bundled |
+| ❌ Missing | **notion** | Notion API for creating and managing pages, databases, and blocks. | openclaw-bundled |
+| ❌ Missing | **obsidian** | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. | openclaw-bundled |
+| ❌ Missing | **openai-image-gen** | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. | openclaw-bundled |
+| ❌ Missing | **openai-whisper** | Local speech-to-text with the Whisper CLI (no API key). | openclaw-bundled |
+| ❌ Missing | **openai-whisper-api** | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). | openclaw-bundled |
+| ❌ Missing | **openhue** | Control Philips Hue lights and scenes via the OpenHue CLI. | openclaw-bundled |
+| ❌ Missing | **oracle** | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). | openclaw-bundled |
+| ❌ Missing | **ordercli** | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). | openclaw-bundled |
+| ❌ Missing | **peekaboo** | Capture and automate macOS UI with the Peekaboo CLI. | openclaw-bundled |
+| ❌ Missing | **sag** | ElevenLabs text-to-speech with mac-style say UX. | openclaw-bundled |
+| ✅ Ready | **session-logs** | Search and analyze your own session logs (older/parent conversations) using jq. | openclaw-bundled |
+| ❌ Missing | **sherpa-onnx-tts** | Local text-to-speech via sherpa-onnx (offline, no cloud) | openclaw-bundled |
+| ✅ Ready | **skill-creator** | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. | openclaw-bundled |
+| ❌ Missing | **slack** | Use when you need to control Slack from OpenClaw via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. | openclaw-bundled |
+| ❌ Missing | **songsee** | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. | openclaw-bundled |
+| ❌ Missing | **sonoscli** | Control Sonos speakers (discover/status/play/volume/group). | openclaw-bundled |
+| ❌ Missing | **spotify-player** | Terminal Spotify playback/search via spogo (preferred) or spotify_player. | openclaw-bundled |
+| ❌ Missing | **summarize** | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”). | openclaw-bundled |
+| ❌ Missing | **things-mac** | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. | openclaw-bundled |
+| ✅ Ready | **tmux** | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. | openclaw-bundled |
+| ❌ Missing | **trello** | Manage Trello boards, lists, and cards via the Trello REST API. | openclaw-bundled |
+| ✅ Ready | **video-frames** | Extract frames or short clips from videos using ffmpeg. | openclaw-bundled |
+| ❌ Missing | **voice-call** | Start voice calls via the OpenClaw voice-call plugin. | openclaw-bundled |
+| ❌ Missing | **wacli** | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). | openclaw-bundled |
+| ✅ Ready | **weather** | Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed. | openclaw-bundled |
+| ❌ Missing | **xurl** | A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint. | openclaw-bundled |

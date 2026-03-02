@@ -1,0 +1,446 @@
+fatal: bad revision 'HEAD'
+[master (root-commit) 7a805fa] Auto-backup: 22/02/2026 12:00:01
+ 171 files changed, 9400 insertions(+)
+ create mode 100644 .openclaw/workspace-state.json
+ create mode 100644 AGENTS.md
+ create mode 100644 BOT_WORKFLOW.md
+ create mode 100644 BUSINESS_PLAN.md
+ create mode 100644 CHANGELOG.md
+ create mode 100644 CONFIG_SNIPPETS.md
+ create mode 100644 CONTEXT.md
+ create mode 100644 FILE_ORGANIZATION.md
+ create mode 100644 GOVERNANCE.md
+ create mode 100644 HEARTBEAT.md
+ create mode 100644 IDENTITY.md
+ create mode 100644 INDEX.md
+ create mode 100644 LEARNING_TRACKER.md
+ create mode 100644 LICENSE
+ create mode 100644 MEMORY.md
+ create mode 100644 MESSAGING.md
+ create mode 100644 MODEL_ROUTING.md
+ create mode 100644 PREFERENCES.md
+ create mode 100644 README.md
+ create mode 100644 ROOT_CAUSES.md
+ create mode 100644 SKILLS_ORCHESTRATION.md
+ create mode 100644 SOUL.md
+ create mode 100644 TEAM/HANDBOOK.md
+ create mode 100644 TEAM/INDEX.md
+ create mode 100644 TEAM/architect/SOUL.md
+ create mode 100644 TEAM/devops/IDENTITY.md
+ create mode 100644 TEAM/devops/SOUL.md
+ create mode 100644 TEAM/frontend/IDENTITY.md
+ create mode 100644 TEAM/frontend/SOUL.md
+ create mode 100644 TEAM/ghost/SOUL.md
+ create mode 100644 TEAM/junior/IDENTITY.md
+ create mode 100644 TEAM/junior/SOUL.md
+ create mode 100644 TEAM/oracle/SOUL.md
+ create mode 100644 TEAM/qa/IDENTITY.md
+ create mode 100644 TEAM/qa/SOUL.md
+ create mode 100644 TEAM/seeker/SOUL.md
+ create mode 100644 TEAM/team-lead/IDENTITY.md
+ create mode 100644 TEAM/team-lead/SOUL.md
+ create mode 100644 TOOLS.md
+ create mode 100644 USER.md
+ create mode 100644 VPN_BOT_BLUEPRINT.md
+ create mode 100644 VPS_OPTIMIZATION.md
+ create mode 100644 brain5000-bot/src/index.js
+ create mode 100644 business/AgentZero/.gitkeep
+ create mode 100644 business/assets/.gitkeep
+ create mode 100644 business/coding/.gitkeep
+ create mode 100644 business/comms/.gitkeep
+ create mode 100644 business/metrics/.gitkeep
+ create mode 100644 business/paid-ads/.gitkeep
+ create mode 100644 business/research/.gitkeep
+ create mode 100644 business/sales/.gitkeep
+ create mode 100644 business/team/.gitkeep
+ create mode 100644 config/mcporter.json
+ create mode 100644 docs/.gitkeep
+ create mode 100644 docs/assets/frame_15.jpg
+ create mode 100644 docs/assets/frame_25.jpg
+ create mode 100644 docs/assets/frame_35.jpg
+ create mode 100644 docs/assets/frame_5.jpg
+ create mode 100644 founder/INDEX.md
+ create mode 100644 founder/anti-pattern-log.md
+ create mode 100644 founder/core-context.md
+ create mode 100644 founder/mental-models.md
+ create mode 100644 founder/pmf-tracker.md
+ create mode 100644 logs/.gitkeep
+ create mode 100644 logs/github_backup.log
+ create mode 100644 logs/system_archive/logs_backup_20260219.tar.gz
+ create mode 100644 logs/system_archive/openclaw_logs_20260219.tar.gz
+ create mode 100644 memory/2026-02-15.md
+ create mode 100644 memory/2026-02-18.md
+ create mode 100644 memory/2026-02-19.md
+ create mode 100644 memory/2026-02-20.md
+ create mode 100644 memory/2026-02-22.md
+ create mode 100644 memory/flushes/session-2026-02-17-summary.md
+ create mode 100644 memory/heartbeat-state.json
+ create mode 100644 memory/ontology/graph.jsonl
+ create mode 100644 memory/ontology/schema.yaml
+ create mode 100644 openclaw_hired.json
+ create mode 100644 personal/Christianity/.gitkeep
+ create mode 100644 personal/dating/.gitkeep
+ create mode 100644 personal/finance/.gitkeep
+ create mode 100644 personal/health/.gitkeep
+ create mode 100644 personal/images/.gitkeep
+ create mode 100644 personal/priority-list/.gitkeep
+ create mode 100644 personal/productivity/.gitkeep
+ create mode 100644 personal/research/.gitkeep
+ create mode 100644 personal/travel/.gitkeep
+ create mode 100644 ram_status.log
+ create mode 100644 scripts/daily_health.py
+ create mode 100644 scripts/process_brain.py
+ create mode 100755 scripts/tier4.py
+ create mode 100644 secrets/.gitkeep
+ create mode 100644 skills/apify/.gitkeep
+ create mode 100644 skills/automation-workflows/SKILL.md
+ create mode 100644 skills/automation-workflows/_meta.json
+ create mode 100644 skills/clawddocs/SKILL.md
+ create mode 100644 skills/clawddocs/_meta.json
+ create mode 100644 skills/clawddocs/package.json
+ create mode 100755 skills/clawddocs/scripts/build-index.sh
+ create mode 100755 skills/clawddocs/scripts/cache.sh
+ create mode 100755 skills/clawddocs/scripts/fetch-doc.sh
+ create mode 100755 skills/clawddocs/scripts/recent.sh
+ create mode 100755 skills/clawddocs/scripts/search.sh
+ create mode 100755 skills/clawddocs/scripts/sitemap.sh
+ create mode 100755 skills/clawddocs/scripts/track-changes.sh
+ create mode 100644 skills/clawddocs/snippets/common-configs.md
+ create mode 100644 skills/create-cli/SKILL.md
+ create mode 100644 skills/create-cli/_meta.json
+ create mode 100644 skills/create-cli/references/cli-guidelines.md
+ create mode 100644 skills/debug-pro/SKILL.md
+ create mode 100644 skills/debug-pro/_meta.json
+ create mode 100644 skills/domain-dns-ops/SKILL.md
+ create mode 100644 skills/domain-dns-ops/_meta.json
+ create mode 100644 skills/domain-dns-ops/references/pointers.md
+ create mode 100644 skills/echo.md
+ create mode 120000 skills/file-organizer
+ create mode 120000 skills/find-skills
+ create mode 100644 skills/freeride/SKILL.md
+ create mode 100644 skills/freeride/__pycache__/main.cpython-312.pyc
+ create mode 100644 skills/freeride/freeride.egg-info/PKG-INFO
+ create mode 100644 skills/freeride/freeride.egg-info/SOURCES.txt
+ create mode 100644 skills/freeride/freeride.egg-info/dependency_links.txt
+ create mode 100644 skills/freeride/freeride.egg-info/entry_points.txt
+ create mode 100644 skills/freeride/freeride.egg-info/requires.txt
+ create mode 100644 skills/freeride/freeride.egg-info/top_level.txt
+ create mode 100644 skills/freeride/main.py
+ create mode 100644 skills/freeride/package.json
+ create mode 100644 skills/freeride/setup.py
+ create mode 100644 skills/freeride/watcher.py
+ create mode 100644 skills/gemini/SKILL.md
+ create mode 100644 skills/gemini/_meta.json
+ create mode 100644 skills/github/SKILL.md
+ create mode 100644 skills/github/_meta.json
+ create mode 100644 skills/gog/SKILL.md
+ create mode 100644 skills/gog/_meta.json
+ create mode 100644 skills/health-check/SKILL.md
+ create mode 100644 skills/health-check/references/STATUS_PROTOCOL.md
+ create mode 100755 skills/health-check/scripts/check.sh
+ create mode 100644 skills/mcporter/SKILL.md
+ create mode 100644 skills/mcporter/_meta.json
+ create mode 100644 skills/notion/SKILL.md
+ create mode 100644 skills/notion/_meta.json
+ create mode 100644 skills/ontology/SKILL.md
+ create mode 100644 skills/ontology/_meta.json
+ create mode 100644 skills/ontology/references/queries.md
+ create mode 100644 skills/ontology/references/schema.md
+ create mode 100755 skills/ontology/scripts/ontology.py
+ create mode 100644 skills/qmd-cli/.clawhub/origin.json
+ create mode 100644 skills/qmd-cli/SKILL.md
+ create mode 100644 skills/qmd-cli/_meta.json
+ create mode 100644 skills/qmd-handler/SKILL.md
+ create mode 100644 skills/telegram-api/LICENSE
+ create mode 100644 skills/telegram-api/SKILL.md
+ create mode 100644 skills/telegram-api/_meta.json
+ create mode 100644 skills/tmux/SKILL.md
+ create mode 100644 skills/tmux/_meta.json
+ create mode 100755 skills/tmux/scripts/find-sessions.sh
+ create mode 100755 skills/tmux/scripts/wait-for-text.sh
+ create mode 100644 skills/todoist/.gitkeep
+ create mode 100644 skills/token-saver.md
+ create mode 100755 skills/token-saver/scripts/monitor_usage.sh
+ create mode 100644 token_comparison.md
+ create mode 100644 vps/Modelfile.qwen-opt
+ create mode 100644 vps/Modelfile.qwen-opt.new
+ create mode 100755 vps/github_sync.sh
+ create mode 100644 vps/logs/routing/.gitkeep
+ create mode 100644 vps/mistakes/.gitkeep
+ create mode 100644 vps/mistakes/2026-02-22-config-invalid.md
+ create mode 100644 vps/mistakes/INDEX.md
+ create mode 100644 vps/qmd_runner.py
+ create mode 100644 vps/security/.gitkeep
+ create mode 100644 vps/vps-stats/.gitkeep
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+Sun Feb 22 12:00:01 PM +0630 2026: Backup successful.
+[master a6f4e0d] Auto-backup: 22/02/2026 18:00:01
+ 14 files changed, 418 insertions(+), 40 deletions(-)
+ create mode 100644 CLAWDECK.md
+ delete mode 100644 MODEL_ROUTING.md
+ create mode 100644 cerebro/topics/dashboard-setup.md
+ create mode 100644 memory/2026-02-22-issue-log.md
+ create mode 100755 scripts/clawdeck_poll.py
+ create mode 100644 scripts/update_dashboard_usage.py
+ create mode 100644 state/llm-routing.json
+ create mode 100644 test_file_for_nolan.txt
+ delete mode 100644 vps/logs/routing/.gitkeep
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+Sun Feb 22 06:00:01 PM +0630 2026: Backup successful.
+[main eda0ce1] Auto-backup: 23/02/2026 00:00:01
+ 3 files changed, 22 insertions(+), 1 deletion(-)
+ create mode 100755 03 Reference/02 System Configs/skills/self-improvement/scripts/activator.sh
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   6bcbb03..eda0ce1  main -> main
+Mon Feb 23 12:00:04 AM +0630 2026: Backup successful.
+[main 291fa2f] Auto-backup: 23/02/2026 06:00:01
+ 3 files changed, 23 insertions(+)
+ create mode 100644 99 Archive/logs/brain_processing.log
+ create mode 100644 99 Archive/logs/second_brain.log
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   c6567fc..291fa2f  main -> main
+Mon Feb 23 06:00:04 AM +0630 2026: Backup successful.
+[main c3d2f31] Auto-backup: 23/02/2026 12:00:01
+ 7 files changed, 152 insertions(+), 7 deletions(-)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-23.md
+ create mode 100644 03 Reference/02 System Configs/scripts/gbn_engine.py
+ delete mode 100644 03 Reference/02 System Configs/skills/apify/.gitkeep
+ create mode 100644 GOVERNMENT_BY_NUMBERS.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   291fa2f..c3d2f31  main -> main
+Mon Feb 23 12:00:04 PM +0630 2026: Backup successful.
+[main 01cc942] Auto-backup: 23/02/2026 18:00:01
+ 5 files changed, 17 insertions(+), 7 deletions(-)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   c3d2f31..01cc942  main -> main
+Mon Feb 23 06:00:04 PM +0630 2026: Backup successful.
+[main 531a639] Auto-backup: 24/02/2026 00:00:01
+ 20 files changed, 12704 insertions(+), 2 deletions(-)
+ create mode 100644 00 Backups/logs/openclaw-2026-02-22.log
+ create mode 100644 00 Backups/logs/openclaw-2026-02-23.log
+ rename {02 Work/02 Projects => 01 Personal/projects}/brain5000-bot/src/index.js (100%)
+ create mode 100644 02 Work/02 Projects/vpn-agency-bot/customer_bot.py
+ create mode 100644 02 Work/02 Projects/vpn-agency-bot/init_db.py
+ create mode 100644 02 Work/02 Projects/vpn-agency-bot/tokens.json
+ create mode 100644 02 Work/02 Projects/vpn-agency-bot/vpn_agency.db
+ create mode 100644 "02\\ Work/01\\ Business\\ Strategy/detailed_ai_plan_v1.md"
+ create mode 100644 "02\\ Work/01\\ Business\\ Strategy/failover_analysis.md"
+ create mode 100644 03 Reference/01 Documentation/learnings/ERRORS.md
+ create mode 100644 AGENTS.yaml
+ create mode 100644 GUARDRAILS.yaml
+ create mode 100644 Soul.yaml
+ create mode 100644 memory/2026-02-23.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   01cc942..531a639  main -> main
+Tue Feb 24 12:00:05 AM +0630 2026: Backup successful.
+[main f406732] Auto-backup: 24/02/2026 06:00:01
+ 7 files changed, 59 insertions(+), 9 deletions(-)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-24.md
+ create mode 100644 99
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   531a639..f406732  main -> main
+Tue Feb 24 06:00:04 AM +0630 2026: Backup successful.
+[main 41f7967] Auto-backup: 24/02/2026 12:00:01
+ 10 files changed, 85 insertions(+), 72 deletions(-)
+ delete mode 100644 AGENTS.yaml
+ create mode 100644 GUARDRAILS.md
+ delete mode 100644 GUARDRAILS.yaml
+ delete mode 100644 Soul.yaml
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   f406732..41f7967  main -> main
+Tue Feb 24 12:00:04 PM +0630 2026: Backup successful.
+[main 257dbd0] Auto-backup: 24/02/2026 18:00:01
+ 4 files changed, 31 insertions(+), 4 deletions(-)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   41f7967..257dbd0  main -> main
+Tue Feb 24 06:00:04 PM +0630 2026: Backup successful.
+[main 9d386c2] Auto-backup: 25/02/2026 00:00:01
+ 9 files changed, 35 insertions(+), 5 deletions(-)
+ create mode 100644 team/DECISIONS.md
+ create mode 100644 team/GOALS.md
+ create mode 100644 team/PROJECT_STATUS.md
+ rename agents/aung_kyaw.md => team/agents/aung_kyaw/SOUL.md (100%)
+ rename agents/local_worker.md => team/agents/local_worker/SOUL.md (100%)
+ rename agents/mg_htet.md => team/agents/mg_htet/SOUL.md (100%)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   6f98617..9d386c2  main -> main
+Wed Feb 25 12:00:04 AM +0630 2026: Backup successful.
+[main 8b8ac9e] Auto-backup: 25/02/2026 06:00:02
+ 14 files changed, 129 insertions(+), 6 deletions(-)
+ create mode 100644 01 Personal/01 Daily Notes/2026-02-24.md
+ create mode 100644 01 Personal/01 Daily Notes/2026-02-25.md
+ create mode 100644 02 Work/02 Projects/PARA/PARA_MAP.md
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-25.md
+ create mode 100644 03 Reference/02 System Configs/knowledge_management/KMS_SPEC.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   9d386c2..8b8ac9e  main -> main
+Wed Feb 25 06:00:05 AM +0630 2026: Backup successful.
+[main dd25633] Auto-backup: 25/02/2026 12:00:01
+ 6 files changed, 18 insertions(+), 3 deletions(-)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   8b8ac9e..dd25633  main -> main
+Wed Feb 25 12:00:04 PM +0630 2026: Backup successful.
+[main fbcac8b] Auto-backup: 25/02/2026 18:00:01
+ 3 files changed, 10 insertions(+)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   dd25633..fbcac8b  main -> main
+Wed Feb 25 06:00:04 PM +0630 2026: Backup successful.
+warning: adding embedded git repository: opencortex
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> opencortex
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached opencortex
+hint: 
+hint: See "git help submodule" for more information.
+[main fd61140] Auto-backup: 26/02/2026 00:00:01
+ 39 files changed, 1285 insertions(+), 80 deletions(-)
+ create mode 100644 .opencortex-version
+ delete mode 100644 01 Personal/01 Daily Notes/2026-02-24.md
+ delete mode 100644 01 Personal/01 Daily Notes/2026-02-25.md
+ rename BOT_WORKFLOW.md => 99 Archive/BOT_WORKFLOW.md (100%)
+ rename FILE_ORGANIZATION.md => 99 Archive/FILE_ORGANIZATION.md (100%)
+ rename GOVERNANCE.md => 99 Archive/GOVERNANCE.md (100%)
+ rename GOVERNMENT_BY_NUMBERS.md => 99 Archive/GOVERNMENT_BY_NUMBERS.md (100%)
+ create mode 100644 99 Archive/HEARTBEAT.md
+ create mode 100644 99 Archive/IDENTITY.md
+ rename {03 Reference/02 System Configs/knowledge_management => 99 Archive}/KMS_SPEC.md (100%)
+ rename MESSAGING.md => 99 Archive/MESSAGING.md (100%)
+ rename {02 Work/02 Projects/PARA => 99 Archive}/PARA_MAP.md (100%)
+ rename SKILLS_ORCHESTRATION.md => 99 Archive/SKILLS_ORCHESTRATION.md (100%)
+ create mode 100644 99 Archive/nightly_review_check.py
+ create mode 100644 BOOTSTRAP.md
+ create mode 100644 INFRA.md
+ rename memory/{ => archive}/2026-02-15.md (100%)
+ rename memory/{ => archive}/2026-02-18.md (100%)
+ rename memory/{ => archive}/2026-02-19.md (100%)
+ rename memory/{ => archive}/2026-02-20.md (100%)
+ rename memory/{ => archive}/2026-02-22-issue-log.md (100%)
+ rename memory/{ => archive}/2026-02-22.md (100%)
+ rename memory/{ => archive}/2026-02-23.md (100%)
+ create mode 100644 memory/archive/2026-02-25.md
+ create mode 100644 memory/metrics.log
+ create mode 100644 memory/preferences.md
+ create mode 160000 opencortex
+ create mode 100755 scripts/git-backup.sh
+ create mode 100755 scripts/metrics.sh
+ create mode 100755 scripts/vault.sh
+ create mode 100755 scripts/verify.sh
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   fbcac8b..fd61140  main -> main
+Thu Feb 26 12:00:05 AM +0630 2026: Backup successful.
+[main 4e4330b] Auto-backup: 26/02/2026 06:00:02
+ 6 files changed, 108 insertions(+), 1 deletion(-)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-26.md
+ create mode 100644 GOVERNMENT_BY_NUMBERS.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   fd61140..4e4330b  main -> main
+Thu Feb 26 06:00:05 AM +0630 2026: Backup successful.
+[main f7b12ca] Auto-backup: 26/02/2026 12:00:01
+ 4 files changed, 12 insertions(+), 3 deletions(-)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   d4d9c60..f7b12ca  main -> main
+Thu Feb 26 12:00:05 PM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3323
+[main 242e0e4] Auto-backup: 26/02/2026 18:00:01
+ 5 files changed, 58 insertions(+)
+ create mode 100644 team/agents/ko_sai/DAILY_CHECKLIST.md
+ create mode 100644 team/agents/ko_sai/SOUL.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   f7b12ca..242e0e4  main -> main
+Thu Feb 26 06:00:04 PM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3352
+[main fe700b1] Auto-backup: 27/02/2026 00:00:01
+ 7 files changed, 59 insertions(+), 13 deletions(-)
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   242e0e4..fe700b1  main -> main
+Fri Feb 27 12:00:04 AM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3365
+[main ec772b2] Auto-backup: 27/02/2026 06:00:01
+ 6 files changed, 45 insertions(+), 5 deletions(-)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-27.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   fe700b1..ec772b2  main -> main
+Fri Feb 27 06:00:04 AM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3366
+[main 3fefb72] Auto-backup: 27/02/2026 12:00:01
+ 8 files changed, 208 insertions(+), 39 deletions(-)
+ create mode 100644 1password-cli.deb
+ create mode 100644 memory/2026-02-27.md
+ create mode 100644 memory/archive/2026-02-26.md
+ create mode 100644 memory/archive/2026-02-26.md.raw
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   ec772b2..3fefb72  main -> main
+Fri Feb 27 12:00:04 PM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3409
+[main 80d02c6] Auto-backup: 27/02/2026 18:00:01
+ 15 files changed, 223 insertions(+), 31 deletions(-)
+ create mode 100644 memory/projects/context-engineering.md
+ create mode 100644 memory/projects/multi-agent-patterns.md
+ create mode 100644 memory/vault/.master_secret
+ create mode 100644 memory/vault/keys.txt
+ create mode 100644 memory/vault/passwords.txt
+ create mode 100755 scripts/master_vault.sh
+ create mode 100755 scripts/simple_vault.sh
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   3fefb72..80d02c6  main -> main
+Fri Feb 27 06:00:04 PM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3439
+[main 7f8f8aa] Auto-backup: 28/02/2026 00:00:01
+ 7 files changed, 149 insertions(+)
+ create mode 100755 scripts/rotate_gemini.sh
+ create mode 100755 scripts/test_models_fast.sh
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   80d02c6..7f8f8aa  main -> main
+Sat Feb 28 12:00:04 AM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3512
+[main 84e3ea1] Auto-backup: 28/02/2026 06:00:02
+ 6 files changed, 47 insertions(+), 5 deletions(-)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-02-28.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   7f8f8aa..84e3ea1  main -> main
+Sat Feb 28 06:00:05 AM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3513
+[main a094dc1] Auto-backup: 28/02/2026 12:00:01
+ 6 files changed, 49 insertions(+), 3 deletions(-)
+ rename memory/{ => archive}/2026-02-27.md (72%)
+ create mode 100644 morning_briefing.md
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   84e3ea1..a094dc1  main -> main
+Sat Feb 28 12:00:04 PM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 3567
