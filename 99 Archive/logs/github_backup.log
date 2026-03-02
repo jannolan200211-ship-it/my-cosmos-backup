@@ -1,0 +1,227 @@
+warning: adding embedded git repository: 03 Reference/02 System Configs/opencortex
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> 03 Reference/02 System Configs/opencortex
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached 03 Reference/02 System Configs/opencortex
+hint: 
+hint: See "git help submodule" for more information.
+warning: adding embedded git repository: 03 Reference/openclaw-skills-registry
+[main 9907a4d] Auto-backup: 03/03/2026 00:00:02
+ 217 files changed, 13031 insertions(+), 1318 deletions(-)
+ create mode 100644 .herenow/state.json
+ create mode 100644 .openclaw/skills/custom-memory-utils/README.md
+ create mode 100644 .openclaw/skills/custom-memory-utils/SKILL.md
+ create mode 100755 .openclaw/skills/custom-memory-utils/distill_conversation.py
+ create mode 100755 .openclaw/skills/custom-memory-utils/ram_check_ai_mode.sh
+ rename morning_briefing.md => 01 Personal/morning_briefing.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/AgentZero/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/BUSINESS_PLAN.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/assets/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/coding/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/comms/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/metrics/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/paid-ads/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/research/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/sales/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/01 Business Strategy/team/.gitkeep (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/VPN_BOT_BLUEPRINT.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/cerebro/topics/dashboard-setup.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/vpn-agency-bot/customer_bot.py (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/vpn-agency-bot/init_db.py (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/vpn-agency-bot/tokens.json (100%)
+ rename {02 Work => 02 Projects/02 Work}/02 Projects/vpn-agency-bot/vpn_agency.db (97%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/HANDBOOK.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/INDEX.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/architect/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/devops/IDENTITY.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/devops/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/frontend/IDENTITY.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/frontend/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/ghost/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/junior/IDENTITY.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/junior/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/oracle/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/qa/IDENTITY.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/qa/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/seeker/SOUL.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/team-lead/IDENTITY.md (100%)
+ rename {02 Work => 02 Projects/02 Work}/03 Operations/TEAM/team-lead/SOUL.md (100%)
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-03-01.md
+ create mode 100644 03 Reference/01 Documentation/Government_By_Numbers/GBN_2026-03-02.md
+ rename {99 Archive/logs => 03 Reference/01 Documentation/docs}/.gitkeep (100%)
+ rename opencortex => 03 Reference/02 System Configs/opencortex (100%)
+ rename {scripts => 03 Reference/03 Scripts}/git-backup.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/master_vault.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/metrics.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/rotate_gemini.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/simple_vault.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/test_models_fast.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/vault.sh (100%)
+ rename {scripts => 03 Reference/03 Scripts}/verify.sh (100%)
+ rename BOOTSTRAP.md => 03 Reference/BOOTSTRAP.md (100%)
+ create mode 100644 03 Reference/GOVERNMENT_BY_NUMBERS.md
+ rename INFRA.md => 03 Reference/INFRA.md (100%)
+ rename README.md => 03 Reference/README.md (100%)
+ rename {founder => 03 Reference/founder}/INDEX.md (100%)
+ rename {founder => 03 Reference/founder}/anti-pattern-log.md (100%)
+ rename {founder => 03 Reference/founder}/core-context.md (100%)
+ rename {founder => 03 Reference/founder}/mental-models.md (100%)
+ rename {founder => 03 Reference/founder}/pmf-tracker.md (100%)
+ create mode 160000 03 Reference/openclaw-skills-registry
+ rename {00 Backups => 04 Archive/00 Backups}/logs/openclaw-2026-02-22.log (100%)
+ rename {00 Backups => 04 Archive/00 Backups}/logs/openclaw-2026-02-23.log (100%)
+ rename 1password-cli.deb => 04 Archive/1password-cli.deb (100%)
+ create mode 100644 04 Archive/99
+ rename {99 Archive => 04 Archive/99 Archive}/BOT_WORKFLOW.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/CHANGELOG.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/FILE_ORGANIZATION.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/GOVERNANCE.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/GOVERNMENT_BY_NUMBERS.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/HEARTBEAT.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/IDENTITY.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/KMS_SPEC.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/LICENSE (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/MESSAGING.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/PARA_MAP.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/README.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/SKILLS_ORCHESTRATION.md (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/crontab.bak.2026-02-22 (100%)
+ rename {docs => 04 Archive/99 Archive/logs}/.gitkeep (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/logs/brain_processing.log (100%)
+ create mode 100644 04 Archive/99 Archive/logs/github_backup.log
+ create mode 100644 04 Archive/99 Archive/logs/second_brain.log
+ rename {99 Archive => 04 Archive/99 Archive}/logs/system_archive/logs_backup_20260219.tar.gz (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/logs/system_archive/openclaw_logs_20260219.tar.gz (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/nightly_review_check.py (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/openclaw_hired.json (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/ram_status.log (100%)
+ rename {99 Archive => 04 Archive/99 Archive}/test_file_for_nolan.txt (100%)
+ create mode 100644 99 Archive/logs/backups/logs_archive_2026-03-02.zip
+ create mode 100644 AUTOMATION.md
+ create mode 100644 CRON_REGISTER.md
+ create mode 100644 FILE_ORGANIZATION.md
+ create mode 100644 SOP_TELEGRAM_CONNECTIVITY.md
+ create mode 100644 SYSTEM_SKILLS_DOCUMENTATION.md
+ create mode 100644 SYSTEM_SKILLS_LIST.md
+ create mode 100644 ai/commands/commit.md
+ create mode 100644 ai/commands/discover.md
+ create mode 100644 ai/commands/execute.md
+ create mode 100644 ai/commands/help.md
+ create mode 100644 ai/commands/index.md
+ create mode 100644 ai/commands/log.md
+ create mode 100644 ai/commands/plan.md
+ create mode 100644 ai/commands/review.md
+ create mode 100644 ai/commands/run-test.md
+ create mode 100644 ai/commands/task.md
+ create mode 100644 ai/commands/user-test.md
+ create mode 100644 ai/custom/memory_distiller_v1.md
+ create mode 100644 ai/custom/n8n/log_chunker.js
+ create mode 100644 ai/custom/n8n/report_formatter.js
+ create mode 100644 ai/custom/n8n_api_reference.md
+ create mode 100644 ai/custom/n8n_cli_setup.md
+ create mode 100644 ai/index.md
+ create mode 100644 ai/rules/agent-orchestrator.mdc
+ create mode 100644 ai/rules/business/era_vpn_standards.mdc
+ create mode 100644 ai/rules/frameworks/index.md
+ create mode 100644 ai/rules/frameworks/redux/autodux.mdc
+ create mode 100644 ai/rules/frameworks/redux/example.mdc
+ create mode 100644 ai/rules/frameworks/redux/index.md
+ create mode 100644 ai/rules/index.md
+ create mode 100644 ai/rules/javascript/error-causes.mdc
+ create mode 100644 ai/rules/javascript/index.md
+ create mode 100644 ai/rules/javascript/javascript-io-network-effects.mdc
+ create mode 100644 ai/rules/javascript/javascript.mdc
+ create mode 100644 ai/rules/log.mdc
+ create mode 100644 ai/rules/please.mdc
+ create mode 100644 ai/rules/productmanager.mdc
+ create mode 100644 ai/rules/requirements.mdc
+ create mode 100644 ai/rules/review-example.md
+ create mode 100644 ai/rules/review.mdc
+ create mode 100644 ai/rules/security/index.md
+ create mode 100644 ai/rules/security/jwt-security.mdc
+ create mode 100644 ai/rules/security/timing-safe-compare-vulnerabilities.mdc
+ create mode 100644 ai/rules/security/timing-safe-compare.mdc
+ create mode 100644 ai/rules/stack.mdc
+ create mode 100644 ai/rules/task-creator.mdc
+ create mode 100644 ai/rules/tdd.mdc
+ create mode 100644 ai/rules/ui.mdc
+ create mode 100644 ai/rules/user-testing.mdc
+ create mode 100755 ai/scripts/n8n_api.py
+ create mode 100755 ai/scripts/n8n_client.py
+ create mode 100755 ai/scripts/n8n_optimizer.py
+ create mode 100755 ai/scripts/n8n_tester.py
+ create mode 100644 content_plan.md
+ create mode 100644 daily_reports/report_2026-03-01.md
+ create mode 100644 memory/00_Shared/00_Context/00_INDEX.md
+ create mode 100644 memory/00_Shared/00_Context/01_FOUNDATION.md
+ create mode 100644 memory/00_Shared/00_Context/02_GLOBAL_PREFERENCES.md
+ create mode 100644 memory/00_Shared/00_Context/03_Standard_Operating_Procedures.md
+ create mode 100644 memory/00_Shared/02_Ko_Sai/02_Logs/TECH_HISTORY_2026.md
+ create mode 100644 memory/00_Shared/03_Skills/01_Original_Skills/01_Original_Index.md
+ create mode 100644 memory/00_Shared/03_Skills/02_Custom_Skills/01_Custom_Index.md
+ create mode 100644 memory/2026-03-02.md
+ delete mode 100644 memory/archive/2026-02-15.md
+ delete mode 100644 memory/archive/2026-02-18.md
+ delete mode 100644 memory/archive/2026-02-19.md
+ delete mode 100644 memory/archive/2026-02-20.md
+ delete mode 100644 memory/archive/2026-02-22-issue-log.md
+ delete mode 100644 memory/archive/2026-02-22.md
+ delete mode 100644 memory/archive/2026-02-23.md
+ delete mode 100644 memory/archive/2026-02-25.md
+ delete mode 100644 memory/archive/2026-02-26.md
+ delete mode 100644 memory/archive/2026-02-26.md.raw
+ delete mode 100644 memory/archive/2026-02-27.md
+ delete mode 100644 memory/flushes/session-2026-02-17-summary.md
+ delete mode 100644 memory/heartbeat-state.json
+ delete mode 100644 memory/metrics.log
+ delete mode 100644 memory/ontology/graph.jsonl
+ delete mode 100644 memory/ontology/schema.yaml
+ delete mode 100644 memory/preferences.md
+ delete mode 100644 memory/projects/context-engineering.md
+ delete mode 100644 memory/projects/multi-agent-patterns.md
+ delete mode 100644 memory/vault/.master_secret
+ delete mode 100644 memory/vault/keys.txt
+ delete mode 100644 memory/vault/passwords.txt
+ create mode 100644 plan/gemini_autonomous_agents_idea.md
+ create mode 100644 plan/memory_distiller_epic.md
+ create mode 100644 plan/telegram_forum_hq_epic.md
+ create mode 100644 plan/tests/micro_task_3_2_verification.md
+ create mode 100644 plan/zayar_content_workflow.md
+ create mode 100644 public/index.html
+ create mode 100644 public/logic/log_chunker.js
+ create mode 100644 public/logic/report_formatter.js
+ create mode 100644 scripts/david_librarian.py
+ create mode 100644 scripts/ko_sai_librarian.py
+ create mode 100755 scripts/log_guardian.sh
+ create mode 100755 scripts/resource_watchdog.sh
+ create mode 100644 scripts/watchdog.log
+ create mode 100644 skills_data.json
+ create mode 100644 skills_formatter.py
+ delete mode 100644 team/agents/aung_kyaw/SOUL.md
+ delete mode 100644 team/agents/local_worker/SOUL.md
+ delete mode 100644 team/agents/mg_htet/SOUL.md
+ create mode 100644 team/tests/log_chunker_test.py
+ create mode 100644 temp_setup/README.md
+ create mode 100644 temp_setup/SKILL.md
+ create mode 100644 temp_setup/check_ram.sh
+ create mode 100644 temp_setup/distill.py
+ create mode 100644 temp_setup/notify.sh
+ create mode 100644 temp_upgrade/SKILL.md
+ create mode 100644 temp_upgrade/UPGRADE_SUMMARY.md
+ create mode 100644 update_workflow.py
+ create mode 100644 vision.md
+ create mode 100644 workflow_backup.json
+To github.com:jannolan200211-ship-it/my-cosmos-backup.git
+   a094dc1..9907a4d  main -> main
+Tue Mar  3 12:00:06 AM +0630 2026: Backup successful.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 4040
