@@ -11,15 +11,18 @@
 - **01_David/**
   - `01_Context/`
   - `02_Logs/`
-    - `STRATEGY_HISTORY_2026.md`: David ၏ အနှစ်ချုပ် မှတ်တမ်း (Topic 44)။
   - `03_Workflows/`
 - **02_Ko_Sai/**
   - `01_Context/`
   - `02_Logs/`
   - `03_Workflows/`
-- **03_Skills/**
+- **03_Ko_Tun/**
+  - `01_Context/`
+  - `02_Logs/`
+  - `03_Workflows/`
+- **04_Skills/**
   - `01_Original_Skills/`
   - `02_Custom_Skills/`
 
 ---
-*Status: Initialized on 2026-03-02*
+*Status: Updated on 2026-03-03*
