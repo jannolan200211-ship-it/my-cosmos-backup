@@ -2,23 +2,17 @@
 import subprocess
 import os
 
-# David's Librarian Script
+# David's Librarian Script (Fixed for OpenClaw 2026.2.26)
 # Logic: 12-hour interval (12:00 AM/PM)
-# Task: Summarize business strategy, contacts, and decisions.
 
 def main():
     print("David's Memory Distillation starting...")
-    # Triggering the compact-framework via subagent spawn
-    # This keeps the main process clean.
-    task = "Perform business memory distillation from today's conversation. Update memory/david/ folder with summarized decisions and contacts."
+    task = "Perform business memory distillation for Topic 44 (David). Update memory/00_Shared/01_David/02_Logs/ with summarized decisions and contacts. Sync with 00_INDEX.md."
     
     try:
-        # Use openclaw command to spawn the distillation task
-        # Redirect output to a log file for transparency
-        subprocess.run(["openclaw", "subagents", "spawn", "david", task], check=True)
+        # Use 'openclaw agent' CLI to run the distillation turn
+        subprocess.run(["openclaw", "agent", "--agent", "david", "--message", task], check=True)
         print("David's Distillation successfully triggered.")
-        # Final transparency message to Nolan (handled via subagent announce or manual send)
-        # Note: In a real cron environment, this script runs independently.
     except Exception as e:
         print(f"Error: {e}")
 

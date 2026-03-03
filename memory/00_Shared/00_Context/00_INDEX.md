@@ -11,6 +11,7 @@
 - **01_David/**
   - `01_Context/`
   - `02_Logs/`
+    - `STRATEGY_HISTORY_2026.md`: David ၏ အနှစ်ချုပ် မှတ်တမ်း (Topic 44)။
   - `03_Workflows/`
 - **02_Ko_Sai/**
   - `01_Context/`
