@@ -12,6 +12,8 @@
 | ❌ Missing | **camsnap** | Capture frames or clips from RTSP/ONVIF cameras. | openclaw-bundled |
 | ✅ Ready | **clawhub** | Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI. | openclaw-bundled |
 | ❌ Missing | **coding-agent** | Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:"acp"), or any work in ~/clawd workspace (never spawn agents here). Requires a bash tool that supports pty:true. | openclaw-bundled |
+| ✅ Ready | **content-strategy** | Build and execute a content marketing strategy for a solopreneur business. Covers audience research, content pillars, distribution, and repurposing. | ko-tun-custom |
+| ✅ Ready | **compact-framework** | Librarian Skill: Autonomous conversation distillation for long threads. Preserves decisions/tasks. Uses ripgrep-first & RAM-aware logic. | openclaw-custom |
 | ❌ Missing | **discord** | Discord ops via the message tool (channel=discord). | openclaw-bundled |
 | ❌ Missing | **eightctl** | Control Eight Sleep pods (status, temperature, alarms, schedules). | openclaw-bundled |
 | ✅ Ready | **gemini** | Gemini CLI for one-shot Q&A, summaries, and generation. | openclaw-bundled |
