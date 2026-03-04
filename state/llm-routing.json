@@ -10,7 +10,7 @@
       "remaining_pct": 1.0,
       "resets": "Sunday"
     },
-    "last_synced": "2026-03-03T21:30:14Z"
+    "last_synced": "2026-03-04T21:30:11Z"
   },
   "codex": {
     "sessions_today": 0,
@@ -19,8 +19,8 @@
     "usage_day_pct": 5
   },
   "routing": {
-    "total_tasks": 25,
-    "claude_tasks": 25,
+    "total_tasks": 29,
+    "claude_tasks": 29,
     "codex_tasks": 0,
     "claude_pct": 100,
     "codex_pct": 0
